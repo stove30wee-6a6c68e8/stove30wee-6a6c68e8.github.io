@@ -1,0 +1,1250 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>成人高清资源 - 高分片单与观影指南</title>
+<meta name="description" content="成人高清资源聚合高分剧情片、艺术电影与经典修复片单，提供分辨率版本对照、字幕与片源分级判断、观影顺序建议，适合注重画质与内容深度的影迷选片参考。">
+<meta name="keywords" content="成人高清资源">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23161a24'/%3E%3Crect x='12' y='20' width='40' height='26' rx='4' fill='none' stroke='%23e8b04b' stroke-width='3'/%3E%3Ccircle cx='32' cy='33' r='6' fill='%23e8b04b'/%3E%3Crect x='18' y='14' width='8' height='4' rx='2' fill='%23e8b04b'/%3E%3Crect x='38' y='14' width='8' height='4' rx='2' fill='%23e8b04b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#e9e6df;
+  --ink-2:#b9b4a8;
+  --ink-3:#837e73;
+  --bg:#11131a;
+  --panel:#191c26;
+  --panel-2:#20242f;
+  --line:#2c3140;
+  --gold:#e8b04b;
+  --gold-soft:#4a3a1c;
+  --gold-deep:#c98f2c;
+  --teal:#5fb3a1;
+  --radius-card:14px;
+  --radius-btn:8px;
+  --radius-tag:999px;
+  --radius-banner:18px;
+  --shadow:0 2px 10px rgba(0,0,0,.35);
+  --shadow-hover:0 8px 24px rgba(0,0,0,.5);
+  --maxw:1340px;
+  --stick-h:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--stick-h)}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  line-height:1.75;font-size:15px;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+h1,h2,h3{line-height:1.35;margin:0}
+button{font-family:inherit}
+
+/* 吸顶容器 */
+.stick-wrap{position:sticky;top:0;z-index:60}
+
+/* 公告条 */
+.notice{
+  background:linear-gradient(90deg,#2a2213,#1c1a15 60%,#181a22);
+  border-bottom:1px solid #3a3220;
+  font-size:13px;color:#d9cfb6;
+}
+.notice-in{
+  max-width:var(--maxw);margin:0 auto;padding:7px 20px;
+  display:flex;gap:18px;align-items:center;flex-wrap:wrap;
+}
+.notice b{color:var(--gold);font-weight:600;letter-spacing:.5px}
+.notice .dot{width:4px;height:4px;border-radius:50%;background:#5a4d2c}
+.notice .n-item{display:inline-flex;gap:6px;align-items:baseline}
+.notice time{color:#a89b7d;font-variant-numeric:tabular-nums}
+
+/* 页头 */
+.head{
+  background:rgba(17,19,26,.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head-in{
+  max-width:var(--maxw);margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:22px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{width:34px;height:34px}
+.brand-txt{font-size:19px;font-weight:700;letter-spacing:.5px;white-space:nowrap}
+.brand-txt em{font-style:normal;color:var(--gold)}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+.main-nav a{
+  padding:6px 11px;border-radius:var(--radius-btn);font-size:14px;color:var(--ink-2);
+  transition:background .18s,color .18s;
+}
+.main-nav a:hover,.main-nav a:focus-visible{background:var(--panel-2);color:var(--ink);outline:none}
+.head-tools{display:flex;gap:8px;align-items:center;flex-shrink:0}
+.search-box{display:flex;align-items:center;background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius-btn);padding:0 4px 0 10px}
+.search-box input{
+  background:transparent;border:0;color:var(--ink);font-size:13px;width:150px;padding:7px 4px;outline:none;
+}
+.search-box input::placeholder{color:var(--ink-3)}
+.search-box button{
+  background:var(--gold);color:#1a1508;border:0;border-radius:6px;font-size:12px;
+  padding:5px 10px;cursor:pointer;font-weight:600;
+}
+.search-box button:hover{background:var(--gold-deep)}
+.btn-ghost{
+  border:1px solid var(--line);background:transparent;color:var(--ink-2);
+  padding:7px 13px;border-radius:var(--radius-btn);font-size:13px;cursor:pointer;
+}
+.btn-ghost:hover{color:var(--ink);border-color:var(--gold-deep)}
+.burger{display:none;background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 9px;cursor:pointer;font-size:16px}
+.burger:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+/* 首屏 */
+.hero{
+  max-width:var(--maxw);margin:0 auto;padding:40px 20px 26px;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;
+}
+.hero-tag{
+  display:inline-block;font-size:12px;letter-spacing:2px;color:var(--gold);
+  border:1px solid var(--gold-soft);background:rgba(232,176,75,.07);
+  padding:3px 12px;border-radius:var(--radius-tag);margin-bottom:16px;
+}
+.hero h1{
+  font-size:clamp(30px,4.2vw,46px);letter-spacing:1px;margin-bottom:16px;
+}
+.hero h1 span{color:var(--gold)}
+.hero p.lead{color:var(--ink-2);font-size:15.5px;max-width:560px;margin:0 0 22px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.btn-main{
+  background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#1a1508;
+  padding:11px 24px;border-radius:var(--radius-btn);font-weight:700;font-size:14px;
+  box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s;
+}
+.btn-main:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.btn-line{
+  border:1px solid #3a4050;padding:11px 22px;border-radius:var(--radius-btn);
+  font-size:14px;color:var(--ink-2);transition:border-color .18s,color .18s;
+}
+.btn-line:hover{border-color:var(--gold-deep);color:var(--ink)}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap;font-size:13px;color:var(--ink-3)}
+.hero-stats b{display:block;font-size:20px;color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.hero-visual{position:relative;height:320px}
+.hv-frame{
+  position:absolute;inset:0;border-radius:var(--radius-banner);
+  background:
+    radial-gradient(circle at 76% 24%,rgba(232,176,75,.22),transparent 52%),
+    radial-gradient(circle at 18% 78%,rgba(95,179,161,.16),transparent 50%),
+    linear-gradient(150deg,#1d2130,#141720);
+  border:1px solid var(--line);overflow:hidden;
+}
+.hv-frame svg{position:absolute;inset:0;width:100%;height:100%}
+.hv-card{
+  position:absolute;right:18px;bottom:18px;left:18px;
+  background:rgba(17,19,26,.82);border:1px solid var(--line);border-radius:12px;
+  padding:12px 14px;display:flex;gap:12px;align-items:center;backdrop-filter:blur(6px);
+}
+.hv-card .poster{width:52px;height:70px;border-radius:6px;flex-shrink:0;overflow:hidden;border:1px solid #363c4b}
+.hv-card .poster img{width:100%;height:100%;object-fit:cover}
+.hv-card h3{font-size:14px;margin-bottom:3px}
+.hv-card p{margin:0;font-size:12px;color:var(--ink-3)}
+.hv-card .badge{font-size:11px;color:var(--gold);border:1px solid var(--gold-soft);padding:1px 7px;border-radius:var(--radius-tag);margin-left:auto;white-space:nowrap}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.hv-orb{animation:drift 7s ease-in-out infinite}
+
+/* 主布局：三栏门户 */
+.layout{
+  max-width:var(--maxw);margin:0 auto;padding:10px 20px 60px;
+  display:grid;grid-template-columns:178px minmax(0,1fr) 252px;gap:28px;align-items:start;
+}
+/* 左频道索引 */
+.side-left{position:sticky;top:calc(var(--stick-h) + 14px)}
+.side-title{font-size:12px;letter-spacing:2px;color:var(--ink-3);margin-bottom:10px;padding-left:10px}
+.chan-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.chan-list a{
+  display:flex;justify-content:space-between;align-items:center;gap:6px;
+  padding:8px 10px;border-radius:8px;font-size:13.5px;color:var(--ink-2);
+  border-left:2px solid transparent;transition:background .16s,color .16s,border-color .16s;
+}
+.chan-list a span{font-size:11px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.chan-list a:hover{background:var(--panel);color:var(--ink)}
+.chan-list a.active{background:var(--panel-2);color:var(--gold);border-left-color:var(--gold)}
+.chan-list a.active span{color:var(--gold-deep)}
+
+/* 主内容 */
+.main-col{min-width:0}
+.sec{margin-bottom:54px;scroll-margin-top:var(--stick-h)}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+.sec-head h2{font-size:22px;letter-spacing:.5px}
+.sec-head .sub{font-size:12.5px;color:var(--ink-3)}
+.sec-head .more{margin-left:auto;font-size:12.5px;color:var(--gold);border-bottom:1px dashed var(--gold-soft);padding-bottom:1px}
+
+/* 概览 */
+.overview{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:24px 26px;box-shadow:var(--shadow);
+}
+.overview p{margin:0 0 14px;color:var(--ink-2);font-size:14.5px}
+.overview p:last-child{margin-bottom:0}
+.overview strong{color:var(--gold);font-weight:600}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:16px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s;
+  display:flex;flex-direction:column;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:#3a4152}
+.card .thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:#0d0f15}
+.card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.card:hover .thumb img{transform:scale(1.04)}
+.card .kind{
+  position:absolute;top:9px;left:9px;font-size:11px;background:rgba(12,14,20,.82);
+  color:var(--gold);padding:2px 9px;border-radius:var(--radius-tag);border:1px solid #3d3520;
+}
+.card .score{
+  position:absolute;right:9px;bottom:9px;font-size:12px;font-weight:700;
+  background:rgba(12,14,20,.85);color:var(--gold);padding:1px 8px;border-radius:6px;
+  font-variant-numeric:tabular-nums;
+}
+.card-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-body h3{font-size:15px}
+.card-body .desc{font-size:12.8px;color:var(--ink-2);margin:0;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11px;color:var(--ink-3);border:1px solid var(--line);padding:1px 8px;border-radius:var(--radius-tag);white-space:nowrap}
+.tag.gold{color:var(--gold);border-color:var(--gold-soft)}
+.card-meta{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink-3);border-top:1px solid var(--line);padding-top:8px}
+
+/* 动态列表 */
+.update-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;background:var(--panel)}
+.update-list li{
+  display:flex;gap:14px;padding:13px 18px;border-bottom:1px solid var(--line);align-items:baseline;
+  transition:background .16s;
+}
+.update-list li:last-child{border-bottom:0}
+.update-list li:hover{background:var(--panel-2)}
+.update-list time{font-size:12px;color:var(--ink-3);flex-shrink:0;font-variant-numeric:tabular-nums;width:60px}
+.update-list .u-name{font-size:14px;font-weight:600;flex-shrink:0}
+.update-list .u-desc{font-size:12.8px;color:var(--ink-2)}
+.update-list .u-type{font-size:11px;color:var(--teal);border:1px solid #2b4a44;padding:0 7px;border-radius:var(--radius-tag);margin-left:auto;flex-shrink:0}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:12px}
+.cat-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 15px;
+  transition:border-color .18s,background .18s,transform .18s;
+}
+.cat-card:hover{border-color:var(--gold-deep);background:var(--panel-2);transform:translateY(-2px)}
+.cat-card h3{font-size:14px;margin-bottom:5px}
+.cat-card p{margin:0;font-size:11.8px;color:var(--ink-3)}
+.cat-card .cnt{display:block;margin-top:8px;font-size:11px;color:var(--gold-deep);font-variant-numeric:tabular-nums}
+
+/* 深度解析 */
+.deep{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:28px 30px;box-shadow:var(--shadow);
+}
+.deep > p{color:var(--ink-2);font-size:14.5px;margin:0 0 16px}
+.deep h3{font-size:17px;margin:26px 0 10px;padding-left:12px;border-left:3px solid var(--gold);color:var(--ink)}
+.deep h3:first-of-type{margin-top:6px}
+.deep ul{margin:8px 0 14px;padding-left:20px;color:var(--ink-2);font-size:14px}
+.deep li{margin-bottom:6px}
+.deep li b{color:var(--ink)}
+.deep .callout{
+  background:var(--panel-2);border:1px solid var(--line);border-left:3px solid var(--teal);
+  border-radius:8px;padding:13px 16px;font-size:13.5px;color:var(--ink-2);margin:14px 0;
+}
+.deep .callout b{color:var(--teal)}
+.compare{width:100%;border-collapse:collapse;font-size:13px;margin:12px 0 6px}
+.compare th,.compare td{border:1px solid var(--line);padding:8px 11px;text-align:left;color:var(--ink-2)}
+.compare th{background:var(--panel-2);color:var(--ink);font-weight:600;font-size:12.5px}
+.compare td:first-child{color:var(--ink)}
+
+/* 体验指南 步骤 */
+.steps{counter-reset:s;display:flex;flex-direction:column;gap:14px}
+.step{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px 16px 58px;
+  position:relative;
+}
+.step::before{
+  counter-increment:s;content:counter(s,decimal-leading-zero);
+  position:absolute;left:16px;top:16px;font-size:15px;font-weight:700;color:var(--gold);
+  font-variant-numeric:tabular-nums;
+}
+.step h3{font-size:14.5px;margin-bottom:5px}
+.step p{margin:0;font-size:13px;color:var(--ink-2)}
+
+/* FAQ */
+.faq details{
+  background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:0 18px;margin-bottom:10px;transition:border-color .18s;
+}
+.faq details[open]{border-color:#3d4457}
+.faq summary{
+  cursor:pointer;padding:14px 0;font-size:14.5px;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold);font-size:18px;font-weight:400;flex-shrink:0}
+.faq details[open] summary::after{content:"−"}
+.faq summary:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:4px}
+.faq .ans{padding:0 0 15px;font-size:13.5px;color:var(--ink-2);border-top:1px solid var(--line);padding-top:12px}
+
+/* 评论 */
+.comment-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(266px,1fr));gap:12px}
+.cmt{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;
+  font-size:13px;color:var(--ink-2);
+}
+.cmt .who{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.cmt .ava{
+  width:24px;height:24px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,#3a3320,#232733);display:grid;place-items:center;
+  font-size:11px;color:var(--gold);font-weight:700;
+}
+.cmt .name{font-size:12.5px;color:var(--ink);font-weight:600}
+.cmt .st{margin-left:auto;font-size:10.5px;color:var(--ink-3)}
+.cmt p{margin:0}
+.cmt p em{font-style:normal;color:var(--gold)}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.news{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  overflow:hidden;display:flex;flex-direction:column;transition:border-color .18s,transform .18s;
+}
+.news:hover{border-color:#3a4152;transform:translateY(-2px)}
+.news .n-img{aspect-ratio:3/2;overflow:hidden;background:#0d0f15}
+.news .n-img img{width:100%;height:100%;object-fit:cover}
+.news .n-body{padding:13px 15px 15px}
+.news h3{font-size:14.5px;margin-bottom:6px}
+.news .n-meta{font-size:11.5px;color:var(--ink-3);margin-bottom:7px;font-variant-numeric:tabular-nums}
+.news p{margin:0;font-size:12.8px;color:var(--ink-2)}
+
+/* 相关推荐 标签索引 */
+.reco-wrap{display:flex;flex-wrap:wrap;gap:9px}
+.reco{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-tag);
+  padding:7px 16px;font-size:13px;color:var(--ink-2);transition:all .18s;
+}
+.reco:hover{color:var(--gold);border-color:var(--gold-deep);background:var(--panel-2)}
+.reco small{color:var(--ink-3);margin-left:5px;font-size:11px}
+
+/* 榜单 + 时间线 */
+.extra-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}
+.rank{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:18px 20px}
+.rank ol{list-style:none;margin:0;padding:0;counter-reset:r}
+.rank li{
+  counter-increment:r;display:flex;gap:11px;align-items:baseline;padding:9px 0;
+  border-bottom:1px dashed var(--line);font-size:13.5px;
+}
+.rank li:last-child{border-bottom:0}
+.rank li::before{
+  content:counter(r);color:var(--gold);font-weight:700;font-size:13px;width:18px;flex-shrink:0;
+  font-variant-numeric:tabular-nums;
+}
+.rank .r-name{color:var(--ink)}
+.rank .r-note{margin-left:auto;font-size:11.5px;color:var(--ink-3);flex-shrink:0}
+.timeline{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:18px 20px}
+.timeline ul{list-style:none;margin:0;padding:0 0 0 16px;border-left:1px solid #363c4b}
+.timeline li{position:relative;padding:0 0 16px 16px;font-size:13px;color:var(--ink-2)}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-5px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--gold-deep)}
+.timeline b{display:block;color:var(--ink);font-size:13.5px;margin-bottom:2px}
+.timeline time{font-size:11.5px;color:var(--gold-deep);font-variant-numeric:tabular-nums}
+
+/* 投稿互动 */
+.submit-band{
+  background:linear-gradient(120deg,#1e222f,#191c26 55%,#221d12);
+  border:1px solid var(--line);border-radius:var(--radius-banner);
+  padding:24px 26px;display:flex;gap:22px;align-items:center;flex-wrap:wrap;
+}
+.submit-band h2{font-size:19px;margin-bottom:6px}
+.submit-band p{margin:0;font-size:13px;color:var(--ink-2);max-width:560px}
+.submit-band .acts{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+
+/* 右侧辅助栏 */
+.side-right{position:sticky;top:calc(var(--stick-h) + 14px);display:flex;flex-direction:column;gap:18px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:16px 17px}
+.panel h2{font-size:14.5px;margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid var(--line);color:var(--ink)}
+.hot-list{list-style:none;margin:0;padding:0;counter-reset:h}
+.hot-list li{counter-increment:h;display:flex;gap:9px;padding:7px 0;font-size:13px;align-items:baseline}
+.hot-list li::before{
+  content:counter(h);font-size:11px;color:var(--ink-3);width:16px;flex-shrink:0;
+  font-variant-numeric:tabular-nums;
+}
+.hot-list li:nth-child(-n+3)::before{color:var(--gold);font-weight:700}
+.hot-list a:hover{color:var(--gold)}
+.hot-list .h-meta{margin-left:auto;font-size:11px;color:var(--ink-3);flex-shrink:0}
+.dir-tags{display:flex;flex-wrap:wrap;gap:7px}
+.dir-tags a{font-size:12px;color:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius-tag);padding:3px 10px}
+.dir-tags a:hover{color:var(--gold);border-color:var(--gold-deep)}
+.mini-note{font-size:12px;color:var(--ink-3);margin:0}
+.mini-note b{color:var(--ink-2)}
+
+/* 页尾 */
+.foot{border-top:1px solid var(--line);background:#0d0f14;margin-top:20px}
+.foot-in{max-width:var(--maxw);margin:0 auto;padding:36px 20px 20px}
+.foot-top{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:28px;margin-bottom:28px}
+.foot-brand .brand-txt{font-size:17px;margin-bottom:10px;display:block}
+.foot-brand p{font-size:12.8px;color:var(--ink-3);margin:0;max-width:330px;line-height:1.8}
+.foot-col h3{font-size:13px;color:var(--ink-2);margin-bottom:10px;letter-spacing:.5px}
+.foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.foot-col a{font-size:12.5px;color:var(--ink-3)}
+.foot-col a:hover{color:var(--gold)}
+.foot-bottom{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:11.8px;color:var(--ink-3)}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:20px;bottom:24px;width:42px;height:42px;border-radius:50%;
+  background:var(--panel-2);border:1px solid var(--line);color:var(--gold);cursor:pointer;
+  display:grid;place-items:center;font-size:16px;opacity:0;pointer-events:none;
+  transition:opacity .22s,transform .22s;z-index:70;box-shadow:var(--shadow);
+}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{transform:translateY(-3px);border-color:var(--gold-deep)}
+.to-top:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+/* 搜索无结果 */
+.no-result{display:none;font-size:13px;color:var(--ink-3);padding:14px 0}
+.no-result.show{display:block}
+
+/* 遮罩 */
+.mask{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:55}
+.mask.show{display:block}
+
+/* 响应式 */
+@media (max-width:1100px){
+  .layout{grid-template-columns:170px minmax(0,1fr);}
+  .side-right{display:none}
+  .hero{grid-template-columns:1fr;gap:24px}
+  .hero-visual{height:230px;order:-1}
+  .news-grid{grid-template-columns:1fr}
+  .extra-grid{grid-template-columns:1fr}
+}
+@media (max-width:1024px){
+  :root{--stick-h:88px}
+  .main-nav{display:none;position:fixed;top:var(--stick-h);left:0;right:0;background:#14171f;
+    border-bottom:1px solid var(--line);padding:12px 16px;flex-direction:column;z-index:58;max-height:70vh;overflow:auto}
+  .main-nav.open{display:flex}
+  .burger{display:block}
+  .head-tools .search-box input{width:110px}
+}
+@media (max-width:740px){
+  :root{--stick-h:84px}
+  .layout{grid-template-columns:1fr;gap:0;padding:8px 15px 48px}
+  .side-left{position:static;margin-bottom:26px}
+  .chan-list{flex-direction:row;overflow-x:auto;gap:6px;padding-bottom:6px}
+  .chan-list a{border-left:0;border-bottom:2px solid transparent;white-space:nowrap;padding:6px 10px}
+  .chan-list a.active{border-left:0;border-bottom-color:var(--gold)}
+  .chan-list a span{display:none}
+  .side-title{display:none}
+  .hero{padding:24px 15px 18px}
+  .hero h1{font-size:28px}
+  .hero-stats{gap:18px}
+  .overview,.deep{padding:20px 18px}
+  .card-grid{grid-template-columns:1fr 1fr;gap:11px}
+  .card-body h3{font-size:13.5px}
+  .card-body .desc{font-size:12px}
+  .comment-grid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr 1fr;gap:20px}
+  .head-tools .search-box{display:none}
+  .submit-band{padding:18px}
+  .submit-band .acts{margin-left:0;width:100%}
+  .update-list li{flex-wrap:wrap;gap:6px 10px}
+  .update-list .u-type{margin-left:0}
+}
+@media (max-width:420px){
+  .card-grid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="stick-wrap">
+  <div class="notice" role="region" aria-label="更新公告">
+    <div class="notice-in">
+      <span><b>成人高清资源</b></span>
+      <span class="n-item"><time datetime="2026-11-08">11月8日</time> · <span>《雾港来信》4K修复版上线，含导演评论轨</span></span>
+      <span class="dot" aria-hidden="true"></span>
+      <span class="n-item"><time datetime="2026-11-06">11月6日</time> · <span>新增 12 部北欧剧情片 1080p 版本</span></span>
+      <span class="dot" aria-hidden="true"></span>
+      <span class="n-item"><b>38</b> 个条目本周完成字幕校对</span>
+    </div>
+  </div>
+
+  <header class="head">
+    <div class="head-in">
+      <a class="brand" href="#top" aria-label="成人高清资源 首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1b1f2b"/>
+          <rect x="11" y="21" width="42" height="26" rx="4" fill="none" stroke="#e8b04b" stroke-width="3"/>
+          <circle cx="32" cy="34" r="6.5" fill="none" stroke="#e8b04b" stroke-width="3"/>
+          <rect x="17" y="14" width="9" height="4" rx="2" fill="#e8b04b"/>
+          <rect x="38" y="14" width="9" height="4" rx="2" fill="#e8b04b"/>
+        </svg>
+        <span class="brand-txt">成人<em>高清</em>资源</span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="频道导航">
+        <a href="#pick">高分剧情</a>
+        <a href="#pick">艺术电影</a>
+        <a href="#pick">经典修复</a>
+        <a href="#update">版本动态</a>
+        <a href="#deep">画质解析</a>
+        <a href="#guide">选片路径</a>
+        <a href="#faq">常见问题</a>
+        <a href="#submit">投稿交流</a>
+      </nav>
+      <div class="head-tools">
+        <div class="search-box">
+          <label for="siteSearch" style="position:absolute;left:-9999px">站内搜索</label>
+          <input id="siteSearch" type="search" placeholder="搜片名 / 类型 / 版本" autocomplete="off">
+          <button type="button" id="searchBtn">查找</button>
+        </div>
+        <button class="btn-ghost" type="button" onclick="document.getElementById('submit').scrollIntoView()">投稿</button>
+        <button class="burger" id="burger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="mainNav">☰</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div class="mask" id="mask" aria-hidden="true"></div>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="heroH1">
+    <div class="hero-copy">
+      <span class="hero-tag">剧情 · 艺术 · 修复</span>
+      <h1 id="heroH1">成人高清资源</h1>
+      <p class="lead">面向成年观众的剧情长片、艺术电影与经典修复片单。每个条目标注实际分辨率、音轨格式、字幕来源与版本差异，按画质和内容深度两条线筛片，不用在一堆模糊截图中猜哪版能看。</p>
+      <div class="hero-actions">
+        <a class="btn-main" href="#pick">查看本周精选</a>
+        <a class="btn-line" href="#deep">分辨率版本对照</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>486</b>收录条目</div>
+        <div><b>132</b>4K / 1080p 双版本</div>
+        <div><b>11-08</b>最近校对</div>
+        <div><b>38</b>本周新字幕</div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hv-frame">
+        <svg viewBox="0 0 520 320" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e8b04b" stop-opacity=".28"/>
+              <stop offset="1" stop-color="#5fb3a1" stop-opacity=".05"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#5fb3a1" stop-opacity=".22"/>
+              <stop offset="1" stop-color="#e8b04b" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="520" height="320" fill="none"/>
+          <circle class="hv-orb" cx="392" cy="86" r="66" fill="url(#g1)"/>
+          <circle cx="120" cy="248" r="92" fill="url(#g2)"/>
+          <g stroke="#3b4152" stroke-width="1.2" fill="none">
+            <rect x="58" y="62" width="150" height="96" rx="8"/>
+            <rect x="58" y="62" width="150" height="96" rx="8" transform="translate(16,16)" opacity=".5"/>
+            <rect x="58" y="62" width="150" height="96" rx="8" transform="translate(32,32)" opacity=".25"/>
+          </g>
+          <g stroke="#e8b04b" stroke-width="1.6" fill="none" opacity=".7">
+            <path d="M300 190 h96 a8 8 0 0 1 8 8 v54 a8 8 0 0 1-8 8 h-96 a8 8 0 0 1-8-8 v-54 a8 8 0 0 1 8-8 z"/>
+            <path d="M336 208 l24 14 -24 14 z" fill="#e8b04b" stroke="none"/>
+            <path d="M292 178 h112" stroke-dasharray="4 6"/>
+          </g>
+          <g fill="#4a5164">
+            <rect x="300" y="96" width="34" height="6" rx="3"/>
+            <rect x="300" y="112" width="58" height="6" rx="3"/>
+            <rect x="300" y="128" width="44" height="6" rx="3"/>
+          </g>
+        </svg>
+      </div>
+      <div class="hv-card">
+        <div class="poster"><img src="https://picsum.photos/seed/whletter7/400/600" width="400" height="600" alt="《雾港来信》修复版竖版海报" loading="lazy"></div>
+        <div>
+          <h3>雾港来信 · 4K修复</h3>
+          <p>2160p / DTS-HD 5.1 / 简体中字（导演校订）</p>
+        </div>
+        <span class="badge">8.9</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="layout">
+
+    <!-- 左频道索引 -->
+    <aside class="side-left" aria-label="频道索引">
+      <div class="side-title">频道索引</div>
+      <ul class="chan-list" id="chanList">
+        <li><a href="#overview" class="active">领域概览<span>01</span></a></li>
+        <li><a href="#pick">精选片单<span>12</span></a></li>
+        <li><a href="#update">版本动态<span>10</span></a></li>
+        <li><a href="#cat">分类入口<span>08</span></a></li>
+        <li><a href="#deep">画质解析<span>04</span></a></li>
+        <li><a href="#guide">选片路径<span>05</span></a></li>
+        <li><a href="#faq">常见问题<span>06</span></a></li>
+        <li><a href="#comments">影迷短评<span>16</span></a></li>
+        <li><a href="#news">资讯<span>06</span></a></li>
+        <li><a href="#reco">相关方向<span>08</span></a></li>
+        <li><a href="#extra">榜单与年表<span>02</span></a></li>
+        <li><a href="#submit">投稿交流<span>—</span></a></li>
+      </ul>
+    </aside>
+
+    <!-- 主内容 -->
+    <div class="main-col">
+
+      <!-- 1 概览 -->
+      <section class="sec" id="overview">
+        <div class="sec-head">
+          <h2>剧情长片与艺术电影的片源版图</h2>
+          <span class="sub">分辨率、音轨、字幕三条线</span>
+        </div>
+        <div class="overview">
+          <p>成年观众找高清片源，卡点通常不在“有没有”，而在“哪一版”。同一部《雾港来信》，流媒体版是 1080p 流压缩、约 4.2Mbps 码率，蓝光版是 2160p、平均 62Mbps，暗部噪点和海面高光的表现差出一整个量级。这类差异在剧情片里尤其明显——北欧片偏爱自然光，室内夜戏多，低码率版本一到烛光场景就成块状色斑。</p>
+          <p>方向上大致分四类：<strong>作者电影</strong>（如《冬日车站》《第七个夏天》这类影展片）、<strong>类型剧情</strong>（犯罪、家庭、年代戏）、<strong>经典修复</strong>（1970—1990 年代作品的 4K 重制）、<strong>纪录与实验影像</strong>。前三类占收录条目的八成以上。修复片的判断门槛更高：要看修复方是哪个机构，扫描底片还是翻正片，有没有过度的数字降噪。</p>
+          <p>近期值得留意的具体项：《雾港来信》导演校订版字幕在 11 月 8 日上线；《盐与火》的 1080p 版本被指出缺失 12 分钟段落，已由上传者重新压制；北欧剧情片批次新增 12 部，其中 7 部带原声 DTS 音轨。字幕方面，简体中文的校对质量差距比片源更大，机翻痕迹重的版本在长对白段落几乎不可读。</p>
+        </div>
+      </section>
+
+      <!-- 2 精选 -->
+      <section class="sec" id="pick">
+        <div class="sec-head">
+          <h2>本周精选片单</h2>
+          <span class="sub">按版本完整度排序</span>
+          <a class="more" href="#reco">更多方向</a>
+        </div>
+        <div class="card-grid" id="cardGrid">
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/whletter7/400/300" width="400" height="300" alt="《雾港来信》雨夜码头场景剧照" loading="lazy">
+              <span class="kind">作者电影</span><span class="score">8.9</span>
+            </div>
+            <div class="card-body">
+              <h3>雾港来信</h3>
+              <p class="desc">葡萄牙导演佩德罗·卡尔多索新作，全片 70% 为夜戏与雨景。4K 版保留胶片颗粒，低码率版本在雨幕段落出现明显涂抹。</p>
+              <div class="tags"><span class="tag gold">2160p</span><span class="tag">DTS-HD 5.1</span><span class="tag">导演校订字幕</span></div>
+              <div class="card-meta"><span>更新 11-08</span><span>4.2 万人标记</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/winterst3/400/300" width="400" height="300" alt="《冬日车站》站台雪景剧照" loading="lazy">
+              <span class="kind">影展片</span><span class="score">8.4</span>
+            </div>
+            <div class="card-body">
+              <h3>冬日车站</h3>
+              <p class="desc">芬兰作品，2026 年柏林主竞赛。全片对白稀少，靠环境声推进，音轨好坏直接影响观感，建议选无损版本。</p>
+              <div class="tags"><span class="tag gold">1080p</span><span class="tag">无损音轨</span><span class="tag">芬兰语原声</span></div>
+              <div class="card-meta"><span>更新 11-05</span><span>2.7 万人标记</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/saltfire5/400/300" width="400" height="300" alt="《盐与火》海岸晒盐场航拍剧照" loading="lazy">
+              <span class="kind">剧情 / 年代</span><span class="score">8.1</span>
+            </div>
+            <div class="card-body">
+              <h3>盐与火</h3>
+              <p class="desc">1960 年代南方盐场为背景。10 月底流出的 1080p 版本缺 12 分钟，已确认是压制时段落误删，重制版 11-06 补齐。</p>
+              <div class="tags"><span class="tag gold">1080p 重制</span><span class="tag">完整版</span><span class="tag">简体中字</span></div>
+              <div class="card-meta"><span>更新 11-06</span><span>1.9 万人标记</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/sevensum2/400/300" width="400" height="300" alt="《第七个夏天》海边少年群像剧照" loading="lazy">
+              <span class="kind">修复片</span><span class="score">8.7</span>
+            </div>
+            <div class="card-body">
+              <h3>第七个夏天（1987）</h3>
+              <p class="desc">意大利原作，2026 年由博洛尼亚修复实验室完成 4K 扫描，源为原始负片。保留 35mm 颗粒，未做数字降噪。</p>
+              <div class="tags"><span class="tag gold">4K 修复</span><span class="tag">原始负片</span><span class="tag">意语原声</span></div>
+              <div class="card-meta"><span>更新 11-02</span><span>3.4 万人标记</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/glassroom9/400/300" width="400" height="300" alt="《玻璃房间》玻璃幕墙与室内人物剧照" loading="lazy">
+              <span class="kind">悬疑剧情</span><span class="score">7.8</span>
+            </div>
+            <div class="card-body">
+              <h3>玻璃房间</h3>
+              <p class="desc">单场景室内戏，全片 94 分钟在玻璃幕墙办公楼完成。高光区域多，流媒体版压缩后窗框边缘出现振铃效应。</p>
+              <div class="tags"><span class="tag gold">1080p</span><span class="tag">HDR10</span><span class="tag">双语字幕</span></div>
+              <div class="card-meta"><span>更新 10-29</span><span>1.4 万人标记</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/northroad4/400/300" width="400" height="300" alt="《北纬六十三度》公路与极昼天光剧照" loading="lazy">
+              <span class="kind">纪录 / 公路</span><span class="score">8.2</span>
+            </div>
+            <div class="card-body">
+              <h3>北纬六十三度</h3>
+              <p class="desc">冰岛环岛纪录长片，极昼段落连续 27 分钟自然光拍摄。这种长镜头对流码率要求高，建议至少 15Mbps。</p>
+              <div class="tags"><span class="tag gold">2160p</span><span class="tag">HDR</span><span class="tag">冰岛语旁白</span></div>
+              <div class="card-meta"><span>更新 10-31</span><span>1.1 万人标记</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/papercity1/400/300" width="400" height="300" alt="《纸城》旧城印刷厂内景剧照" loading="lazy">
+              <span class="kind">家庭剧情</span><span class="score">8.0</span>
+            </div>
+            <div class="card-body">
+              <h3>纸城</h3>
+              <p class="desc">三代人围绕一间印刷厂的故事，对白密集、方言重。字幕质量成为主要变量，目前仅一版人工校订，其余为机器转写。</p>
+              <div class="tags"><span class="tag gold">1080p</span><span class="tag">人工校订字幕</span><span class="tag">方言</span></div>
+              <div class="card-meta"><span>更新 11-01</span><span>2.2 万人标记</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/lasttram8/400/300" width="400" height="300" alt="《末班电车》夜间城市电车轨道剧照" loading="lazy">
+              <span class="kind">黑色电影</span><span class="score">8.5</span>
+            </div>
+            <div class="card-body">
+              <h3>末班电车（1974）</h3>
+              <p class="desc">修复版由法国 CNC 支持，源为翻正片而非原始负片，因此高光略硬。修复说明中已注明这一点，属可接受取舍。</p>
+              <div class="tags"><span class="tag gold">4K 修复</span><span class="tag">翻正片源</span><span class="tag">法语原声</span></div>
+              <div class="card-meta"><span>更新 10-27</span><span>1.6 万人标记</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/quietwave6/400/300" width="400" height="300" alt="《静默浪潮》海面长曝光剧照" loading="lazy">
+              <span class="kind">实验影像</span><span class="score">7.6</span>
+            </div>
+            <div class="card-body">
+              <h3>静默浪潮</h3>
+              <p class="desc">72 分钟无对白，全部为海面长镜头拼接。画面信息量低但渐变层次多，低码率下会出现色带，是检验片源的典型样本。</p>
+              <div class="tags"><span class="tag gold">2160p</span><span class="tag">10bit 色深</span><span class="tag">无对白</span></div>
+              <div class="card-meta"><span>更新 10-30</span><span>0.8 万人标记</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/halfmoon3/400/300" width="400" height="300" alt="《半月街》旧街巷路灯夜景剧照" loading="lazy">
+              <span class="kind">犯罪剧情</span><span class="score">8.3</span>
+            </div>
+            <div class="card-body">
+              <h3>半月街</h3>
+              <p class="desc">1990 年代港产片风格重制，霓虹夜景占比高。红色灯光在 MPEG 压缩下最先崩，选版本时优先看红色区域是否糊成一片。</p>
+              <div class="tags"><span class="tag gold">1080p</span><span class="tag">粤语原声</span><span class="tag">繁体 / 简中双字</span></div>
+              <div class="card-meta"><span>更新 11-03</span><span>2.5 万人标记</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/deepwell2/400/300" width="400" height="300" alt="《深井》矿道口与晨雾剧照" loading="lazy">
+              <span class="kind">社会剧情</span><span class="score">8.6</span>
+            </div>
+            <div class="card-body">
+              <h3>深井</h3>
+              <p class="desc">矿区题材，大量地下低照度镜头。该片是判断片源暗部能力的标准测试片之一，暗场噪点控制好坏一目了然。</p>
+              <div class="tags"><span class="tag gold">2160p</span><span class="tag">暗场测试</span><span class="tag">简中字幕</span></div>
+              <div class="card-meta"><span>更新 11-04</span><span>3.0 万人标记</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/eveningbell5/400/300" width="400" height="300" alt="《晚钟》教堂钟楼黄昏逆光剧照" loading="lazy">
+              <span class="kind">宗教题材</span><span class="score">7.9</span>
+            </div>
+            <div class="card-body">
+              <h3>晚钟</h3>
+              <p class="desc">波兰作品，大量逆光与烛光。烛火高光在压缩后容易形成光晕，对比两个版本时看火焰边缘是否发虚即可判断。</p>
+              <div class="tags"><span class="tag gold">1080p</span><span class="tag">波兰语原声</span><span class="tag">人工字幕</span></div>
+              <div class="card-meta"><span>更新 10-28</span><span>1.2 万人标记</span></div>
+            </div>
+          </article>
+
+        </div>
+        <p class="no-result" id="noResult">没有匹配的条目，换个片名或类型词试试。</p>
+      </section>
+
+      <!-- 3 动态 -->
+      <section class="sec" id="update">
+        <div class="sec-head">
+          <h2>版本与字幕更新</h2>
+          <span class="sub">近 14 天</span>
+        </div>
+        <ul class="update-list">
+          <li><time datetime="2026-11-08">11-08</time><span class="u-name">雾港来信</span><span class="u-desc">导演校订版简体中字上线，修正了码头对话段 23 处译名不统一。</span><span class="u-type">字幕</span></li>
+          <li><time datetime="2026-11-07">11-07</time><span class="u-name">北纬六十三度</span><span class="u-desc">补上 2160p HDR 版本，码率 48Mbps，极昼段落色带消失。</span><span class="u-type">片源</span></li>
+          <li><time datetime="2026-11-06">11-06</time><span class="u-name">盐与火</span><span class="u-desc">完整版重制，补回此前误删的 12 分钟，含盐场夜戏一段。</span><span class="u-type">片源</span></li>
+          <li><time datetime="2026-11-05">11-05</time><span class="u-name">冬日车站</span><span class="u-desc">无损音轨版替换旧的 AAC 音轨，环境声层次明显不同。</span><span class="u-type">音轨</span></li>
+          <li><time datetime="2026-11-04">11-04</time><span class="u-name">深井</span><span class="u-desc">新增暗场对比截图 6 组，标注了矿道内低照度段的噪点分布。</span><span class="u-type">说明</span></li>
+          <li><time datetime="2026-11-03">11-03</time><span class="u-name">半月街</span><span class="u-desc">繁体字幕由粤语母语者重校，修正了 41 处俚语误译。</span><span class="u-type">字幕</span></li>
+          <li><time datetime="2026-11-02">11-02</time><span class="u-name">第七个夏天</span><span class="u-desc">博洛尼亚修复版 4K 上线，附 14 分钟修复过程说明短片。</span><span class="u-type">片源</span></li>
+          <li><time datetime="2026-11-01">11-01</time><span class="u-name">纸城</span><span class="u-desc">方言段落加注 68 条，主要覆盖闽南语亲属称谓。</span><span class="u-type">字幕</span></li>
+          <li><time datetime="2026-10-31">10-31</time><span class="u-name">玻璃房间</span><span class="u-desc">HDR10 版本补充，窗框振铃在 1080p SDR 版仍可见。</span><span class="u-type">片源</span></li>
+          <li><time datetime="2026-10-29">10-29</time><span class="u-name">晚钟</span><span class="u-desc">人工字幕完成第二轮校对，烛光段落的画外音标注补齐。</span><span class="u-type">字幕</span></li>
+        </ul>
+      </section>
+
+      <!-- 4 分类 -->
+      <section class="sec" id="cat">
+        <div class="sec-head">
+          <h2>按类型与版本找片</h2>
+          <span class="sub">8 个常用入口</span>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-card" href="#pick"><h3>作者电影</h3><p>影展首映、导演署名明确的剧情长片</p><span class="cnt">112 条</span></a>
+          <a class="cat-card" href="#pick"><h3>经典 4K 修复</h3><p>1970—1990 年代作品的重制版本</p><span class="cnt">74 条</span></a>
+          <a class="cat-card" href="#pick"><h3>北欧剧情片</h3><p>芬兰、冰岛、挪威、丹麦作品集中区</p><span class="cnt">58 条</span></a>
+          <a class="cat-card" href="#deep"><h3>暗场测试片</h3><p>低照度镜头多，用来判断片源暗部能力</p><span class="cnt">21 条</span></a>
+          <a class="cat-card" href="#deep"><h3>字幕校订版</h3><p>人工重校，标注校订者与校对轮次</p><span class="cnt">96 条</span></a>
+          <a class="cat-card" href="#pick"><h3>纪录长片</h3><p>非虚构题材，时长 80 分钟以上</p><span class="cnt">46 条</span></a>
+          <a class="cat-card" href="#pick"><h3>方言对白片</h3><p>粤语、闽南语、川渝方言等，字幕依赖度高</p><span class="cnt">33 条</span></a>
+          <a class="cat-card" href="#guide"><h3>入门试片</h3><p>适合第一次判断片源质量的样本条目</p><span class="cnt">12 条</span></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="sec" id="deep">
+        <div class="sec-head">
+          <h2>分辨率、码率与版本差异的硬判断</h2>
+          <span class="sub">深度解析</span>
+        </div>
+        <div class="deep">
+          <p>标着“2160p”的文件不等于画质好。一部两小时剧情片如果只有 6GB，那平均码率不到 7Mbps，和 1080p 蓝光的 20Mbps 相比，压缩痕迹只会更重。选片时先看码率，再看分辨率——这个顺序反了，判断基本会错。</p>
+
+          <h3>分辨率只是容器，码率才决定画面留不留得住</h3>
+          <p>《静默浪潮》是个好例子。全片无对白，画面是海面长镜头，看起来“简单”，但渐变色域极宽。同一素材的 2160p 版本，8Mbps 码率下天空渐变出现 7—9 条明显色带；48Mbps 版本中这些色带基本消失。文件体积差了 6 倍，观感差距集中在 72 分钟里那二十来处渐变镜头上。</p>
+          <p>反过来，室内对话戏为主的《玻璃房间》，1080p、15Mbps 就足够。全片 94 分钟只有 3 处大幅运动镜头，压缩算法不需要处理复杂场景切换。这类片子给到 2160p 是浪费，除非追求 HDR 的高光表现。</p>
+
+          <h3>修复片要查修复方与扫描源，不是查“4K”标签</h3>
+          <p>修复版的可信度可以拆成三项核对：修复机构、扫描源、降噪程度。三项缺一项，判断就要打折。</p>
+          <ul>
+            <li><b>修复机构</b>：博洛尼亚实验室、法国 CNC、美国国会图书馆这类机构有公开的修复说明文档，可查。《第七个夏天》的说明里写明源为原始负片，扫描分辨率 4K，这是相对可信的一档。</li>
+            <li><b>扫描源</b>：原始负片 &gt; 翻正片 &gt; 发行拷贝。《末班电车》用的是翻正片，修复方在说明中主动标注，高光略硬属已知取舍；未标注源、只说“4K 修复”的版本，可信度直接降到最低档。</li>
+            <li><b>降噪程度</b>：过度数字降噪会把 35mm 颗粒抹平，人脸变成蜡像。《第七个夏天》保留了颗粒，海面反光处能看到细密噪点，这是正确做法。</li>
+          </ul>
+          <div class="callout"><b>可核对的结构：</b>一个修复版值不值得选，按“机构可查 → 源已标注 → 颗粒保留”三步过一遍。三步全过，基本可用；只过第一步，等第二轮说明再决定；一步都不过，按普通片源对待。</div>
+
+          <h3>字幕是独立变量，和画质不能混为一谈</h3>
+          <p>《纸城》的方言对白是关键变量。同一条目下，机器转写版本把闽南语亲属称谓“阿妗”译成“阿姨”，把“序大”译成“长辈”，语义没错但人物关系全平了。人工校订版在 10 月 29 日到 11 月 1 日之间补了 68 条注释，主要就在称谓和敬语层级上。对白密集的家庭戏，字幕差异对理解的影响超过分辨率。</p>
+          <table class="compare">
+            <thead><tr><th>判断项</th><th>可用版本特征</th><th>需谨慎的版本特征</th></tr></thead>
+            <tbody>
+              <tr><td>码率</td><td>两小时片 ≥ 20GB</td><td>两小时片 &lt; 8GB</td></tr>
+              <tr><td>修复源</td><td>说明中写明原始负片或翻正片</td><td>只写“4K 修复”，无源说明</td></tr>
+              <tr><td>颗粒</td><td>35mm 片保留细密噪点</td><td>画面异常干净、人脸发蜡</td></tr>
+              <tr><td>字幕</td><td>标注校订者、校对轮次</td><td>无署名、译名前后不一</td></tr>
+            </tbody>
+          </table>
+
+          <h3>“版本多”本身会制造错误判断</h3>
+          <p>《盐与火》10 月底的 1080p 版本缺 12 分钟，问题出在压制时按章节切分，误把第 6 章整段跳过。这件事在 11 月 2 日被一位上传者在说明区指出，11 月 6 日重制补齐。缺段版本在缺段处的时间戳是连续的，如果不熟悉原片结构，几乎看不出来——这正是要核对片长的原因。1960 年代题材的片子，原片 118 分钟，任何标 106 分钟的版本都先打问号。</p>
+          <p>另一个常见误区是把“文件大”等同于“画质好”。高码率配上错误的色彩空间转换，肤色会整体偏绿。《半月街》有一版 32GB 的 1080p，霓虹红被压成橙，原因是压制时误用了 Rec.601 矩阵。体积够大，颜色错了，一样不能用。</p>
+        </div>
+      </section>
+
+      <!-- 6 指南 -->
+      <section class="sec" id="guide">
+        <div class="sec-head">
+          <h2>先看什么，后看什么</h2>
+          <span class="sub">消费路径</span>
+        </div>
+        <div class="steps">
+          <div class="step"><h3>先用一部暗场多的片子试片源</h3><p>《深井》的矿道段或《雾港来信》的雨夜码头，这两处最能暴露压缩问题。看暗部有没有块状、雨丝是否糊成一片，五分钟就能判断这一版能不能用。</p></div>
+          <div class="step"><h3>核对片长与原片时长</h3><p>去查该片在影展或发行方公布的片长。《盐与火》标 106 分钟的版本直接排除，差 12 分钟不是剪辑版本差异，是缺段。</p></div>
+          <div class="step"><h3>查修复说明里的三项</h3><p>机构、扫描源、降噪程度。三项都在，按正常片源对待；只有“4K 修复”四个字，先当普通 1080p 看。</p></div>
+          <div class="step"><h3>字幕先看前十分钟</h3><p>人物称谓、专有名词、敬语层级，前十分钟基本能暴露机翻痕迹。《纸城》里“阿妗”和“阿姨”的区别，第一场家庭聚餐戏就出现了。</p></div>
+          <div class="step"><h3>同类型条目横向比较再决定投入</h3><p>《冬日车站》和《北纬六十三度》都靠环境声推进，前者对白稀少、后者有旁白。想验证音轨质量，选对白少的那部，环境声的层次差异更直接。</p></div>
+        </div>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="sec" id="faq">
+        <div class="sec-head">
+          <h2>选片时会遇到的六个问题</h2>
+          <span class="sub">FAQ</span>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>2160p 的文件一定比 1080p 清楚吗？</summary>
+            <div class="ans">不一定。两小时片如果 2160p 只有 6GB，平均码率不到 7Mbps，压缩痕迹比 20Mbps 的 1080p 更重。《静默浪潮》的 8Mbps 2160p 版在天空渐变处有 7—9 条色带，而 48Mbps 版基本没有。先看码率，再看分辨率。</div>
+          </details>
+          <details>
+            <summary>“4K 修复”这个说法能信到什么程度？</summary>
+            <div class="ans">要看修复说明里有没有写机构、扫描源、降噪处理。《第七个夏天》由博洛尼亚实验室完成，源为原始负片，保留 35mm 颗粒，属可信一档；《末班电车》用翻正片，修复方主动标注高光略硬，也属可接受。只写“4K 修复”而无任何源说明的版本，按普通片源对待。</div>
+          </details>
+          <details>
+            <summary>《盐与火》为什么会有两个不同片长的版本？</summary>
+            <div class="ans">10 月底流出的 1080p 版在压制时按章节切分，误跳过第 6 章整段，少了 12 分钟。缺段处时间戳连续，不核对片长很难发现。原片 118 分钟，11 月 6 日的重制版已补齐。</div>
+          </details>
+          <details>
+            <summary>方言片的字幕差别真有那么大吗？</summary>
+            <div class="ans">《纸城》里机器转写把“阿妗”译成“阿姨”、“序大”译成“长辈”，语义没错但亲属关系全平了。10 月 29 日到 11 月 1 日之间的人工校订版补了 68 条注释，主要就在称谓和敬语层级。对白密集的家庭戏，字幕影响超过分辨率。</div>
+          </details>
+          <details>
+            <summary>怎么快速判断一个版本的暗部表现？</summary>
+            <div class="ans">找暗场多的段落。《深井》的矿道镜头、《雾港来信》的雨夜码头，看暗部有没有块状色斑、雨丝是否糊成一片。这两处五分钟就能暴露压缩问题，比看参数表直接。</div>
+          </details>
+          <details>
+            <summary>修复片保留颗粒是好事还是坏事？</summary>
+            <div class="ans">对 35mm 胶片原作，保留细密颗粒是正确做法，说明没有过度数字降噪。《第七个夏天》海面反光处能看到细密噪点，属正常；如果修复版画面异常干净、人脸发蜡，通常意味着降噪过头，细节也一起被抹掉了。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8 评论 -->
+      <section class="sec" id="comments">
+        <div class="sec-head">
+          <h2>影迷短评</h2>
+          <span class="sub">16 条</span>
+        </div>
+        <div class="comment-grid">
+          <div class="cmt"><div class="who"><span class="ava">雾</span><span class="name">雾港夜航</span><span class="st">11-08</span></div><p>《雾港来信》导演校订版字幕确实不一样，码头那场对话里人名终于统一了，之前三个版本三种译法。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">盐</span><span class="name">盐场旧事</span><span class="st">11-07</span></div><p>《盐与火》缺段那事我一开始没看出来，时间戳是连着的，后来对片长才发现少 12 分钟。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">冬</span><span class="name">冬日站台</span><span class="st">11-07</span></div><p>《冬日车站》换无损音轨之后，雪地脚步声的层次完全不一样。之前那版听着像踩在纸上。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">静</span><span class="name">静默海面</span><span class="st">11-06</span></div><p>《静默浪潮》拿来试片源是真的好用，天空色带一眼就看得出来，比看码率数字直观。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">纸</span><span class="name">纸城阿明</span><span class="st">11-06</span></div><p>闽南语那段字幕，机翻把“阿妗”写成“阿姨”，我奶奶看了直摇头……人工校订版补上注释后才对。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">半</span><span class="name">半月街灯</span><span class="st">11-05</span></div><p>《半月街》红色霓虹那版被压成橙色，32GB 也没用，颜色错了就是错了。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">深</span><span class="name">深井矿工</span><span class="st">11-05</span></div><p>暗场测试片推荐《深井》矿道那段，低码率版全是块，高码率版能看清岩壁纹理。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">玻</span><span class="name">玻璃幕墙</span><span class="st">11-04</span></div><p>《玻璃房间》窗框振铃在 1080p 版还挺明显，不过室内戏本身对码率要求不高，能接受。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">北</span><span class="name">北纬六十三</span><span class="st">11-04</span></div><p>冰岛那部极昼长镜头，48Mbps 版才看得下去，之前 8Mbps 版色带像铺了层横纹。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">末</span><span class="name">末班乘客</span><span class="st">11-03</span></div><p>《末班电车》修复方主动说用翻正片、高光略硬，这种说明态度反而让人放心。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">七</span><span class="name">第七个夏天</span><span class="st">11-03</span></div><p>博洛尼亚那版颗粒保留得好，海面反光处能看到细密噪点，没被降噪抹平。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">晚</span><span class="name">晚钟低鸣</span><span class="st">11-02</span></div><p>《晚钟》烛火高光在低码率版里全是光晕，火焰边缘发虚，换版本后好很多。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">路</span><span class="name">路人甲</span><span class="st">11-02</span></div><p>最近没时间看片，光顾着收条目了，硬盘快满了（笑）。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">阿</span><span class="name">阿七不熬夜</span><span class="st">11-01</span></div><p>方言片字幕真的太重要，听不懂又不给注释，看两小时全靠猜人物关系。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">雨</span><span class="name">雨夜码头</span><span class="st">10-31</span></div><p>《雾港来信》雨幕那段，低码率版雨丝糊成一片，高码率版才看得出是斜着下的。</p></div>
+          <div class="cmt"><div class="who"><span class="ava">老</span><span class="name">老片新看</span><span class="st">10-30</span></div><p>1970 年代那批修复片，高光都偏硬，看多了也就习惯了，主要看细节有没有留住。</p></div>
+        </div>
+      </section>
+
+      <!-- 9 资讯 -->
+      <section class="sec" id="news">
+        <div class="sec-head">
+          <h2>修复与发行资讯</h2>
+          <span class="sub">近 10 天</span>
+        </div>
+        <div class="news-grid">
+          <article class="news">
+            <div class="n-img"><img src="https://picsum.photos/seed/bolognafix/600/400" width="600" height="400" alt="博洛尼亚修复实验室胶片扫描工作台" loading="lazy"></div>
+            <div class="n-body">
+              <h3>博洛尼亚实验室公布《第七个夏天》修复参数</h3>
+              <div class="n-meta">2026-11-02 · 修复</div>
+              <p>扫描分辨率 4096×2160，源为原始负片，未做时域降噪。说明文档同时列出 6 处物理损伤修补位置，均在第 2 卷。</p>
+            </div>
+          </article>
+          <article class="news">
+            <div class="n-img"><img src="https://picsum.photos/seed/saltfix06/600/400" width="600" height="400" alt="《盐与火》重制版压制界面截图" loading="lazy"></div>
+            <div class="n-body">
+              <h3>《盐与火》缺段版本重制完成，补回 12 分钟</h3>
+              <div class="n-meta">2026-11-06 · 片源</div>
+              <p>重制版按原片 118 分钟完整压制，上传者在说明区附了第 6 章的起止时间戳，便于比对旧版缺段位置。</p>
+            </div>
+          </article>
+          <article class="news">
+            <div class="n-img"><img src="https://picsum.photos/seed/nordic12/600/400" width="600" height="400" alt="北欧剧情片批次封面拼贴" loading="lazy"></div>
+            <div class="n-body">
+              <h3>北欧剧情片批次新增 12 部，7 部带原声 DTS</h3>
+              <div class="n-meta">2026-11-06 · 批次</div>
+              <p>12 部中有 5 部此前仅有流媒体压缩版，本次补齐 1080p 高码率源。芬兰、冰岛作品各占 4 部。</p>
+            </div>
+          </article>
+          <article class="news">
+            <div class="n-img"><img src="https://picsum.photos/seed/papercitysub/600/400" width="600" height="400" alt="《纸城》方言字幕注释界面" loading="lazy"></div>
+            <div class="n-body">
+              <h3>《纸城》方言注释补至 68 条，覆盖亲属称谓</h3>
+              <div class="n-meta">2026-11-01 · 字幕</div>
+              <p>校订者在说明中列出主要修订方向：闽南语亲属称谓、敬语层级、三处地名旧称。机翻版本的 41 处误译已对照列出。</p>
+            </div>
+          </article>
+          <article class="news">
+            <div class="n-img"><img src="https://picsum.photos/seed/halfmooncolor/600/400" width="600" height="400" alt="《半月街》霓虹夜景色彩对比截图" loading="lazy"></div>
+            <div class="n-body">
+              <h3>《半月街》一版 1080p 因色彩矩阵错误被下架</h3>
+              <div class="n-meta">2026-11-03 · 片源</div>
+              <p>该版体积 32GB，但压制时误用 Rec.601 矩阵，霓虹红整体偏橙。上传者 11 月 3 日撤回并重新压制 Rec.709 版本。</p>
+            </div>
+          </article>
+          <article class="news">
+            <div class="n-img"><img src="https://picsum.photos/seed/whletteraudio/600/400" width="600" height="400" alt="《雾港来信》音轨轨道编辑界面" loading="lazy"></div>
+            <div class="n-body">
+              <h3>《雾港来信》4K 版补上 DTS-HD 5.1 音轨</h3>
+              <div class="n-meta">2026-11-08 · 音轨</div>
+              <p>此前仅 AC-3 2.0，雨声与港口环境声的方位感弱。新音轨为 24bit/48kHz，第 3 章雨幕段落差异最明显。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="sec" id="reco">
+        <div class="sec-head">
+          <h2>相关方向索引</h2>
+          <span class="sub">按类型 / 版本 / 需求</span>
+        </div>
+        <div class="reco-wrap">
+          <a class="reco" href="#pick">北欧自然光剧情片<small>58</small></a>
+          <a class="reco" href="#pick">1970 年代黑色电影修复<small>24</small></a>
+          <a class="reco" href="#deep">暗场噪点对比测试<small>21</small></a>
+          <a class="reco" href="#deep">原始负片扫描修复<small>17</small></a>
+          <a class="reco" href="#pick">粤语原声犯罪剧情<small>19</small></a>
+          <a class="reco" href="#guide">无对白实验影像<small>9</small></a>
+          <a class="reco" href="#faq">方言片字幕校订<small>33</small></a>
+          <a class="reco" href="#update">HDR10 版本补充<small>12</small></a>
+        </div>
+      </section>
+
+      <!-- 11 补充：榜单 + 时间线 -->
+      <section class="sec" id="extra">
+        <div class="sec-head">
+          <h2>本周画质榜与修复年表</h2>
+          <span class="sub">可核对项</span>
+        </div>
+        <div class="extra-grid">
+          <div class="rank">
+            <h3 style="font-size:15px;margin-bottom:12px">暗场表现榜（本周）</h3>
+            <ol>
+              <li><span class="r-name">深井 · 2160p</span><span class="r-note">矿道噪点控制好</span></li>
+              <li><span class="r-name">雾港来信 · 2160p</span><span class="r-note">雨夜暗部无块状</span></li>
+              <li><span class="r-name">北纬六十三度 · 2160p HDR</span><span class="r-note">极昼渐变平滑</span></li>
+              <li><span class="r-name">第七个夏天 · 4K</span><span class="r-note">颗粒保留完整</span></li>
+              <li><span class="r-name">晚钟 · 1080p</span><span class="r-note">烛火高光轻微光晕</span></li>
+              <li><span class="r-name">玻璃房间 · 1080p HDR</span><span class="r-note">窗框振铃仍可见</span></li>
+            </ol>
+          </div>
+          <div class="timeline">
+            <h3 style="font-size:15px;margin-bottom:12px">近两周修复与版本节点</h3>
+            <ul>
+              <li><time>2026-11-08</time><b>雾港来信 · 导演校订字幕 + DTS-HD 音轨</b>码头对话 23 处译名统一</li>
+              <li><time>2026-11-06</time><b>盐与火 · 完整版重制</b>补回第 6 章误删的 12 分钟</li>
+              <li><time>2026-11-03</time><b>半月街 · 色彩矩阵更正</b>Rec.601 改 Rec.709，霓虹红恢复</li>
+              <li><time>2026-11-02</time><b>第七个夏天 · 博洛尼亚 4K 上线</b>原始负片扫描，附修复说明短片</li>
+              <li><time>2026-11-01</time><b>纸城 · 方言注释补至 68 条</b>亲属称谓与敬语层级为主</li>
+              <li><time>2026-10-27</time><b>末班电车 · 翻正片源 4K 修复</b>修复方主动标注高光略硬</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 投稿交流 -->
+      <section class="sec" id="submit">
+        <div class="submit-band">
+          <div>
+            <h2>投稿与版本纠错</h2>
+            <p>发现片长不符、字幕译名前后不一致、修复说明缺项，都可以提交。写清片名、版本体积、问题时间戳，核对更快。每周三集中处理一次。</p>
+          </div>
+          <div class="acts">
+            <a class="btn-main" href="#submit">提交版本纠错</a>
+            <a class="btn-line" href="#comments">看影迷讨论</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 右辅助栏 -->
+    <aside class="side-right" aria-label="辅助信息">
+      <div class="panel">
+        <h2>本周热榜</h2>
+        <ol class="hot-list">
+          <li><a href="#pick">雾港来信</a><span class="h-meta">8.9</span></li>
+          <li><a href="#pick">第七个夏天（1987）</a><span class="h-meta">8.7</span></li>
+          <li><a href="#pick">深井</a><span class="h-meta">8.6</span></li>
+          <li><a href="#pick">末班电车（1974）</a><span class="h-meta">8.5</span></li>
+          <li><a href="#pick">冬日车站</a><span class="h-meta">8.4</span></li>
+          <li><a href="#pick">半月街</a><span class="h-meta">8.3</span></li>
+          <li><a href="#pick">北纬六十三度</a><span class="h-meta">8.2</span></li>
+          <li><a href="#pick">盐与火</a><span class="h-meta">8.1</span></li>
+        </ol>
+      </div>
+      <div class="panel">
+        <h2>版本方向</h2>
+        <div class="dir-tags">
+          <a href="#deep">原始负片扫描</a>
+          <a href="#deep">翻正片源</a>
+          <a href="#deep">无损音轨</a>
+          <a href="#faq">人工校订字幕</a>
+          <a href="#faq">方言注释</a>
+          <a href="#guide">暗场测试</a>
+          <a href="#update">HDR10</a>
+          <a href="#reco">10bit 色深</a>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>校对进度</h2>
+        <p class="mini-note"><b>38</b> 个条目本周完成字幕校对，其中 <b>11</b> 个为方言片。待处理队列 <b>24</b> 个，预计 11 月 12 日前完成。</p>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="brand-txt">成人<em>高清</em>资源</span>
+        <p>覆盖 1950—2026 年剧情长片、艺术电影与修复片，条目以分辨率、音轨、字幕三项标注版本差异。每个工作日更新片源与字幕校对记录，修复说明缺项的条目单独标记。</p>
+      </div>
+      <div class="foot-col">
+        <h3>片单</h3>
+        <ul>
+          <li><a href="#pick">作者电影</a></li>
+          <li><a href="#pick">经典 4K 修复</a></li>
+          <li><a href="#pick">北欧剧情片</a></li>
+          <li><a href="#pick">纪录长片</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>版本</h3>
+        <ul>
+          <li><a href="#deep">分辨率与码率</a></li>
+          <li><a href="#deep">修复源判断</a></li>
+          <li><a href="#faq">字幕校订</a></li>
+          <li><a href="#update">版本动态</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>参与</h3>
+        <ul>
+          <li><a href="#submit">投稿纠错</a></li>
+          <li><a href="#comments">影迷短评</a></li>
+          <li><a href="#extra">画质榜</a></li>
+          <li><a href="#news">资讯</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>页面内容为示例条目，片名、评分、时间与校对记录用于展示领域结构，不构成实际发行信息。</span>
+      <span>最近更新 2026-11-08 · 对应条目：雾港来信导演校订字幕</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var burger=document.getElementById('burger');
+  var nav=document.getElementById('mainNav');
+  var mask=document.getElementById('mask');
+
+  function closeNav(){
+    nav.classList.remove('open');
+    mask.classList.remove('show');
+    burger.setAttribute('aria-expanded','false');
+    burger.setAttribute('aria-label','展开导航菜单');
+  }
+  function openNav(){
+    nav.classList.add('open');
+    mask.classList.add('show');
+    burger.setAttribute('aria-expanded','true');
+    burger.setAttribute('aria-label','收起导航菜单');
+  }
+  burger.addEventListener('click',function(){
+    if(nav.classList.contains('open')){closeNav();}else{openNav();}
+  });
+  mask.addEventListener('click',closeNav);
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){closeNav();}
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){closeNav();}
+  });
+
+  /* 搜索 */
+  var input=document.getElementById('siteSearch');
+  var btn=document.getElementById('searchBtn');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('#cardGrid .card'));
+  var noResult=document.getElementById('noResult');
+  function doSearch(){
+    var q=(input.value||'').trim().toLowerCase();
+    if(!q){
+      cards.forEach(function(c){c.style.display='';});
+      noResult.classList.remove('show');
+      return;
+    }
+    var hit=0;
+    cards.forEach(function(c){
+      var txt=c.textContent.toLowerCase();
+      var ok=txt.indexOf(q)>-1;
+      c.style.display=ok?'':'none';
+      if(ok)hit++;
+    });
+    if(hit===0){noResult.classList.add('show');}else{noResult.classList.remove('show');}
+  }
+  btn.addEventListener('click',doSearch);
+  input.addEventListener('input',doSearch);
+  input.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();doSearch();}});
+
+  /* 回到顶部 */
+  var top=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>window.innerHeight){top.classList.add('show');}else{top.classList.remove('show');}
+  },{passive:true});
+  top.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  /* 侧栏当前板块高亮 */
+  var links=Array.prototype.slice.call(document.querySelectorAll('#chanList a'));
+  var sections=links.map(function(a){
+    var id=a.getAttribute('href').slice(1);
+    return document.getElementById(id);
+  });
+  function syncActive(){
+    var pos=window.scrollY+160;
+    var cur=0;
+    sections.forEach(function(s,i){
+      if(s && s.offsetTop<=pos){cur=i;}
+    });
+    links.forEach(function(a,i){
+      if(i===cur){a.classList.add('active');}else{a.classList.remove('active');}
+    });
+  }
+  window.addEventListener('scroll',syncActive,{passive:true});
+  syncActive();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"成人高清资源",
+  "description":"汇聚剧情长片、艺术电影与经典修复片单，标注分辨率、音轨与字幕版本差异。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"2160p 的文件一定比 1080p 清楚吗？","acceptedAnswer":{"@type":"Answer","text":"不一定。两小时片如果 2160p 只有 6GB，平均码率不到 7Mbps，压缩痕迹比 20Mbps 的 1080p 更重。先看码率，再看分辨率。"}},
+    {"@type":"Question","name":"“4K 修复”这个说法能信到什么程度？","acceptedAnswer":{"@type":"Answer","text":"要看修复说明里有没有写机构、扫描源、降噪处理。有机构与扫描源说明、保留 35mm 颗粒的版本可信度较高；只写“4K 修复”而无源说明的版本，按普通片源对待。"}},
+    {"@type":"Question","name":"《盐与火》为什么会有两个不同片长的版本？","acceptedAnswer":{"@type":"Answer","text":"10 月底流出的 1080p 版在压制时按章节切分，误跳过第 6 章整段，少了 12 分钟。原片 118 分钟，11 月 6 日的重制版已补齐。"}},
+    {"@type":"Question","name":"方言片的字幕差别真有那么大吗？","acceptedAnswer":{"@type":"Answer","text":"《纸城》里机器转写把“阿妗”译成“阿姨”、“序大”译成“长辈”，语义没错但亲属关系全平了。人工校订版补了 68 条注释，主要就在称谓和敬语层级。"}},
+    {"@type":"Question","name":"怎么快速判断一个版本的暗部表现？","acceptedAnswer":{"@type":"Answer","text":"找暗场多的段落。《深井》的矿道镜头、《雾港来信》的雨夜码头，看暗部有没有块状色斑、雨丝是否糊成一片，五分钟就能暴露压缩问题。"}},
+    {"@type":"Question","name":"修复片保留颗粒是好事还是坏事？","acceptedAnswer":{"@type":"Answer","text":"对 35mm 胶片原作，保留细密颗粒说明没有过度数字降噪，是正确做法。如果修复版画面异常干净、人脸发蜡，通常意味着降噪过头，细节也一起被抹掉了。"}}
+  ]
+}
+</script>
+</body>
+                                        </html>

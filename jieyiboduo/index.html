@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>结衣波多野种子迅雷 - 日本影视作品资源索引</title>
+<meta name="description" content="结衣波多野种子迅雷聚合日本影视作品资源条目，包含作品索引、演员档案、番号分类、下载格式说明、更新动态与观看指南，适合查找作品信息与整理片单的观众查阅。">
+<meta name="keywords" content="结衣波多野种子迅雷">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f2a44'/%3E%3Cpath d='M20 22h24v6H20zm0 10h24v6H20zm0 10h16v6H20z' fill='%23e8b04b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1f2a44;
+  --ink-soft:#3d4a63;
+  --ink-mute:#6b7488;
+  --ink-faint:#98a0b0;
+  --line:#e2e5ec;
+  --bg:#f6f7fa;
+  --panel:#ffffff;
+  --brand:#22304d;
+  --brand-mid:#3a4d74;
+  --brand-light:#e9edf5;
+  --accent:#c8801f;
+  --accent-light:#fbf0dd;
+  --accent-deep:#9d6112;
+  --radius-card:10px;
+  --radius-btn:6px;
+  --radius-tag:4px;
+  --radius-banner:14px;
+  --shadow:0 1px 3px rgba(31,42,68,.07),0 4px 14px rgba(31,42,68,.05);
+  --shadow-hover:0 3px 8px rgba(31,42,68,.10),0 10px 26px rgba(31,42,68,.09);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --head-h:60px;
+  --notice-h:38px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--head-h) + var(--notice-h) + 12px)}
+body{margin:0;font-family:var(--font);background:var(--bg);color:var(--ink);font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 12px}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font-family:inherit;cursor:pointer}
+
+/* ---------- 吸顶公告条 ---------- */
+.notice{position:sticky;top:0;z-index:60;height:var(--notice-h);background:var(--brand);color:#dfe5f0;font-size:12.5px;display:flex;align-items:center;overflow:hidden}
+.notice-inner{width:100%;max-width:1360px;margin:0 auto;padding:0 18px;display:flex;align-items:center;gap:14px}
+.notice-brand{color:#f0c274;font-weight:700;letter-spacing:.5px;flex:none}
+.notice-track{display:flex;gap:26px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.notice-track::-webkit-scrollbar{display:none}
+.notice-track b{color:#f0c274;font-weight:600;margin-right:6px}
+.notice-track span{opacity:.92}
+
+/* ---------- 页头 ---------- */
+.site-head{position:sticky;top:var(--notice-h);z-index:55;height:var(--head-h);background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.head-inner{max-width:1360px;margin:0 auto;height:100%;padding:0 18px;display:flex;align-items:center;gap:22px}
+.logo{display:flex;align-items:center;gap:10px;flex:none}
+.logo svg{width:32px;height:32px;flex:none}
+.logo-text{font-size:19px;font-weight:800;letter-spacing:.5px;color:var(--brand)}
+.main-nav{display:flex;gap:4px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.main-nav::-webkit-scrollbar{display:none}
+.main-nav a{padding:6px 11px;border-radius:var(--radius-btn);font-size:14px;color:var(--ink-soft);white-space:nowrap;transition:background .18s,color .18s}
+.main-nav a:hover{background:var(--brand-light);color:var(--brand)}
+.head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search-box{display:flex;align-items:center;border:1px solid var(--line);border-radius:var(--radius-btn);background:#fff;padding:0 8px;height:34px}
+.search-box input{border:0;outline:0;width:132px;font-size:13px;font-family:inherit;color:var(--ink);background:transparent}
+.search-box button{border:0;background:transparent;color:var(--brand-mid);font-size:13px;padding:0 2px}
+.quick-link{padding:6px 13px;background:var(--accent);color:#fff;border-radius:var(--radius-btn);font-size:13px;font-weight:600;white-space:nowrap}
+.quick-link:hover{background:var(--accent-deep)}
+.burger{display:none;width:36px;height:36px;border:1px solid var(--line);border-radius:var(--radius-btn);background:#fff;padding:0;align-items:center;justify-content:center}
+.burger span{display:block;width:16px;height:2px;background:var(--brand);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:16px;height:2px;background:var(--brand)}
+.burger span::before{top:-5px}.burger span::after{top:5px}
+.mobile-nav{display:none}
+
+/* ---------- 首屏 ---------- */
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#1d2942 0%,#2c3f63 55%,#3d5074 100%);color:#eef2f9}
+.hero-deco{position:absolute;inset:0;pointer-events:none;opacity:.55}
+.hero-inner{position:relative;max-width:1360px;margin:0 auto;padding:52px 18px 48px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:36px;align-items:center}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1px;color:#f0c274;border:1px solid rgba(240,194,116,.45);padding:3px 11px;border-radius:20px;margin-bottom:16px}
+.hero h1{font-size:clamp(26px,3.4vw,40px);letter-spacing:1px;color:#fff;margin-bottom:14px}
+.hero-desc{font-size:15px;line-height:1.85;color:#c9d3e6;max-width:560px;margin-bottom:22px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.btn-primary{background:var(--accent);color:#fff;padding:10px 22px;border-radius:var(--radius-btn);font-weight:600;font-size:14px;transition:background .18s,transform .18s}
+.btn-primary:hover{background:#dd9527;transform:translateY(-2px)}
+.btn-ghost{border:1px solid rgba(233,240,252,.4);color:#dfe7f5;padding:10px 22px;border-radius:var(--radius-btn);font-size:14px;transition:background .18s}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.hero-stats{display:flex;gap:30px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.16);padding-top:18px}
+.hero-stats div{font-size:12.5px;color:#a9b7cf}
+.hero-stats strong{display:block;font-size:21px;color:#fff;font-weight:700;letter-spacing:.5px}
+.hero-visual{position:relative;min-height:250px}
+.hero-visual svg{width:100%;height:auto}
+.hero-card-float{position:absolute;right:6%;bottom:2%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:var(--radius-banner);padding:12px 16px;font-size:12.5px;color:#dfe7f5;backdrop-filter:blur(6px);max-width:220px}
+.hero-card-float b{display:block;color:#f0c274;font-size:13px;margin-bottom:2px}
+
+/* ---------- 布局 ---------- */
+.layout{max-width:1360px;margin:0 auto;padding:30px 18px 10px;display:grid;grid-template-columns:186px minmax(0,1fr) 250px;gap:26px;align-items:start}
+.channel-col{position:sticky;top:calc(var(--head-h) + var(--notice-h) + 16px)}
+.channel-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:14px 10px;box-shadow:var(--shadow)}
+.channel-title{font-size:12px;letter-spacing:1.5px;color:var(--ink-faint);padding:0 8px 8px;font-weight:600}
+.channel-list a{display:flex;align-items:center;justify-content:space-between;padding:7px 9px;border-radius:var(--radius-btn);font-size:13.5px;color:var(--ink-soft);transition:background .16s,color .16s}
+.channel-list a:hover{background:var(--brand-light);color:var(--brand)}
+.channel-list a.active{background:var(--brand);color:#fff}
+.channel-list em{font-style:normal;font-size:11px;color:var(--ink-faint)}
+.channel-list a.active em{color:#c6d0e4}
+
+.main-col{min-width:0}
+.aside-col{display:flex;flex-direction:column;gap:20px;position:sticky;top:calc(var(--head-h) + var(--notice-h) + 16px)}
+
+/* ---------- 通用板块 ---------- */
+.section{margin-bottom:38px;scroll-margin-top:calc(var(--head-h) + var(--notice-h) + 12px)}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:16px}
+.section-head h2{font-size:20px;letter-spacing:.3px;position:relative;padding-left:12px}
+.section-head h2::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:4px;border-radius:2px;background:var(--accent)}
+.section-head .more{font-size:12.5px;color:var(--ink-mute);white-space:nowrap}
+.section-head .more:hover{color:var(--accent)}
+.lead{font-size:14px;color:var(--ink-mute);margin:-8px 0 16px}
+
+.overview{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:22px 24px;box-shadow:var(--shadow)}
+.overview p{font-size:14.5px;color:var(--ink-soft);line-height:1.9}
+.overview p:last-child{margin-bottom:0}
+
+/* 精选卡片 */
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.card-thumb{position:relative;aspect-ratio:4/3;background:var(--brand-light);overflow:hidden}
+.card-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.card:hover .card-thumb img{transform:scale(1.04)}
+.card-badge{position:absolute;left:10px;top:10px;background:rgba(31,42,68,.82);color:#fff;font-size:11px;padding:2px 8px;border-radius:var(--radius-tag);backdrop-filter:blur(4px)}
+.card-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-body h3{font-size:15px;line-height:1.45}
+.card-body h3 a:hover{color:var(--accent)}
+.card-note{font-size:12.8px;color:var(--ink-mute);line-height:1.7;flex:1}
+.tag-row{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11.5px;padding:1px 7px;border-radius:var(--radius-tag);background:var(--brand-light);color:var(--brand-mid)}
+.tag.warm{background:var(--accent-light);color:var(--accent-deep)}
+.card-meta{display:flex;justify-content:space-between;font-size:11.5px;color:var(--ink-faint);border-top:1px dashed var(--line);padding-top:8px}
+.card-meta b{color:var(--accent-deep);font-weight:600}
+
+/* 动态列表 */
+.update-list{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);box-shadow:var(--shadow);overflow:hidden}
+.update-item{display:flex;gap:14px;padding:13px 18px;border-bottom:1px solid var(--line);align-items:flex-start;transition:background .16s}
+.update-item:last-child{border-bottom:0}
+.update-item:hover{background:#fafbfd}
+.update-date{flex:none;width:64px;font-size:12px;color:var(--ink-faint);padding-top:2px;font-variant-numeric:tabular-nums}
+.update-main{min-width:0}
+.update-main h3{font-size:14.5px;margin-bottom:3px}
+.update-main h3 a:hover{color:var(--accent)}
+.update-main p{font-size:12.8px;color:var(--ink-mute);margin:0;line-height:1.65}
+.update-kind{display:inline-block;font-size:11px;padding:0 6px;border-radius:3px;background:var(--accent-light);color:var(--accent-deep);margin-right:6px;vertical-align:1px}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.cat-item{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:14px 16px;box-shadow:var(--shadow);transition:border-color .18s,transform .18s;display:block}
+.cat-item:hover{border-color:var(--brand-mid);transform:translateY(-2px)}
+.cat-item strong{display:block;font-size:14.5px;margin-bottom:4px;color:var(--brand)}
+.cat-item span{font-size:12px;color:var(--ink-mute);line-height:1.6}
+
+/* 深度解析 */
+.article{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:26px 28px;box-shadow:var(--shadow)}
+.article h3{font-size:16.5px;margin:22px 0 10px;color:var(--brand);padding-left:10px;border-left:3px solid var(--accent)}
+.article h3:first-of-type{margin-top:4px}
+.article p{font-size:14.5px;color:var(--ink-soft);line-height:1.92}
+.article ul{margin:0 0 14px;padding-left:2px}
+.article li{font-size:14px;color:var(--ink-soft);line-height:1.85;padding-left:16px;position:relative;margin-bottom:6px}
+.article li::before{content:"";position:absolute;left:4px;top:11px;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.check-table{width:100%;border-collapse:collapse;margin:8px 0 16px;font-size:13.5px}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+.check-table th{background:var(--brand-light);color:var(--brand);font-weight:600;white-space:nowrap}
+.check-table td{color:var(--ink-soft)}
+
+/* 指南步骤 */
+.steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:16px 18px;box-shadow:var(--shadow);position:relative}
+.step-no{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--brand-mid);border-radius:50%;width:22px;height:22px;line-height:22px;text-align:center;margin-bottom:8px}
+.step h3{font-size:14.5px;margin-bottom:6px}
+.step p{font-size:13px;color:var(--ink-mute);margin:0;line-height:1.7}
+
+/* FAQ */
+.faq{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:6px 20px;box-shadow:var(--shadow)}
+.faq details{border-bottom:1px solid var(--line);padding:12px 0}
+.faq details:last-child{border-bottom:0}
+.faq summary{font-size:14.5px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--brand)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:18px;color:var(--ink-faint);transition:transform .2s;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{font-size:13.8px;color:var(--ink-soft);margin:10px 0 0;line-height:1.85}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.comment{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);padding:13px 15px;box-shadow:var(--shadow)}
+.comment-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.avatar{width:26px;height:26px;border-radius:50%;background:var(--brand-light);color:var(--brand-mid);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none}
+.comment-name{font-size:12.5px;font-weight:600;color:var(--ink-soft)}
+.comment-time{font-size:11px;color:var(--ink-faint);margin-left:auto;flex:none}
+.comment p{font-size:13px;color:var(--ink-soft);margin:0;line-height:1.75}
+
+/* 资讯 */
+.news-list{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);box-shadow:var(--shadow);overflow:hidden}
+.news-item{display:grid;grid-template-columns:118px minmax(0,1fr);gap:14px;padding:14px 18px;border-bottom:1px solid var(--line);align-items:start}
+.news-item:last-child{border-bottom:0}
+.news-item img{width:118px;height:79px;object-fit:cover;border-radius:var(--radius-btn);background:var(--brand-light)}
+.news-body h3{font-size:14.5px;margin-bottom:4px}
+.news-body h3 a:hover{color:var(--accent)}
+.news-body p{font-size:12.8px;color:var(--ink-mute);margin:0;line-height:1.65}
+.news-date{font-size:11.5px;color:var(--ink-faint);margin-top:5px;display:block}
+
+/* 标签索引 */
+.index-tags{display:flex;flex-wrap:wrap;gap:8px}
+.index-tags a{font-size:13px;padding:5px 12px;border-radius:20px;background:var(--panel);border:1px solid var(--line);color:var(--ink-soft);transition:all .18s}
+.index-tags a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+/* 榜单 */
+.rank-list{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);box-shadow:var(--shadow);overflow:hidden}
+.rank-item{display:flex;gap:12px;padding:11px 16px;border-bottom:1px solid var(--line);align-items:center}
+.rank-item:last-child{border-bottom:0}
+.rank-no{width:22px;height:22px;border-radius:5px;background:var(--brand-light);color:var(--brand-mid);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none}
+.rank-item:nth-child(1) .rank-no{background:var(--accent);color:#fff}
+.rank-item:nth-child(2) .rank-no{background:#c9a26a;color:#fff}
+.rank-item:nth-child(3) .rank-no{background:#a9b6c9;color:#fff}
+.rank-name{font-size:13.5px;font-weight:600;color:var(--ink-soft);flex:1;min-width:0}
+.rank-name small{display:block;font-weight:400;font-size:11.5px;color:var(--ink-faint)}
+.rank-score{font-size:12.5px;color:var(--accent-deep);font-weight:700;flex:none}
+
+/* 侧栏组件 */
+.aside-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);box-shadow:var(--shadow);padding:14px 16px}
+.aside-card h3{font-size:14px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line);color:var(--brand)}
+.hot-list li{display:flex;gap:8px;padding:6px 0;font-size:13px;align-items:baseline}
+.hot-list .n{font-size:11.5px;color:var(--accent-deep);font-weight:700;flex:none;width:16px}
+.hot-list a{color:var(--ink-soft);line-height:1.5}
+.hot-list a:hover{color:var(--accent)}
+.timeline li{position:relative;padding:0 0 12px 16px;border-left:1px solid var(--line);font-size:12.5px;color:var(--ink-mute)}
+.timeline li:last-child{border-left-color:transparent;padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-4px;top:6px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.timeline b{display:block;color:var(--ink-soft);font-size:12.8px;font-weight:600}
+.submit-box{background:linear-gradient(150deg,#25324e,#35496e);color:#e6ecf6;border-radius:var(--radius-card);padding:16px 16px;box-shadow:var(--shadow)}
+.submit-box h3{font-size:14px;color:#f0c274;margin-bottom:6px}
+.submit-box p{font-size:12.5px;color:#c2cee2;line-height:1.7;margin-bottom:10px}
+.submit-box a{display:inline-block;background:var(--accent);color:#fff;font-size:12.5px;font-weight:600;padding:6px 14px;border-radius:var(--radius-btn)}
+.submit-box a:hover{background:#dd9527}
+
+/* 页尾 */
+.site-foot{background:#1a2438;color:#a9b5c9;margin-top:26px;padding:34px 18px 20px}
+.foot-inner{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:1.3fr 2fr;gap:34px}
+.foot-brand{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+.foot-brand svg{width:28px;height:28px}
+.foot-brand span{font-size:17px;font-weight:800;color:#fff;letter-spacing:.5px}
+.foot-desc{font-size:13px;line-height:1.8;color:#93a1b8;margin-bottom:12px}
+.foot-meta{font-size:12px;color:#6f7d96;line-height:1.9}
+.foot-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:18px}
+.foot-col h4{font-size:13px;color:#fff;margin-bottom:8px;font-weight:600}
+.foot-col a{display:block;font-size:12.5px;color:#93a1b8;padding:2px 0}
+.foot-col a:hover{color:#f0c274}
+.foot-bottom{max-width:1360px;margin:22px auto 0;padding-top:14px;border-top:1px solid rgba(255,255,255,.1);font-size:12px;color:#6f7d96;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+/* 回到顶部 */
+.to-top{position:fixed;right:20px;bottom:24px;width:42px;height:42px;border-radius:50%;background:var(--brand);color:#fff;border:0;font-size:16px;box-shadow:var(--shadow-hover);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:50}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{transform:translateY(-3px)}
+
+.empty-tip{display:none;font-size:13px;color:var(--ink-mute);padding:14px;background:var(--panel);border:1px dashed var(--line);border-radius:var(--radius-card);margin-top:12px}
+
+/* 响应式 */
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr);gap:22px}
+  .aside-col{grid-column:1/-1;position:static;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+}
+@media (max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;padding:40px 18px 34px}
+  .hero-visual{display:none}
+  .foot-inner{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .main-nav{display:none}
+  .burger{display:flex}
+  .search-box{display:none}
+  .layout{grid-template-columns:1fr}
+  .channel-col{position:static}
+  .channel-card{display:none}
+  .channel-card.open{display:block;margin-bottom:16px}
+  .mobile-nav{display:none;position:fixed;left:0;right:0;top:calc(var(--head-h) + var(--notice-h));background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow-hover);padding:10px 14px 16px;z-index:54;max-height:70vh;overflow-y:auto}
+  .mobile-nav.open{display:block}
+  .mobile-nav a{display:block;padding:9px 8px;font-size:14px;color:var(--ink-soft);border-radius:var(--radius-btn)}
+  .mobile-nav a:hover{background:var(--brand-light)}
+  .mask{display:none;position:fixed;inset:0;background:rgba(20,28,44,.35);z-index:53}
+  .mask.open{display:block}
+}
+@media (max-width:740px){
+  body{font-size:14.5px}
+  .notice-inner{padding:0 12px;gap:10px}
+  .notice-track{gap:18px}
+  .head-inner{padding:0 12px;gap:12px}
+  .logo-text{font-size:16px}
+  .hero-stats{gap:18px}
+  .hero-stats strong{font-size:18px}
+  .layout{padding:18px 12px 6px;gap:18px}
+  .article{padding:18px 16px}
+  .overview{padding:16px 16px}
+  .news-item{grid-template-columns:1fr}
+  .news-item img{width:100%;height:150px}
+  .section-head h2{font-size:18px}
+  .update-item{flex-direction:column;gap:4px}
+  .update-date{width:auto}
+  .aside-col{grid-template-columns:1fr}
+  .to-top{right:12px;bottom:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .card:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice">
+  <div class="notice-inner">
+    <span class="notice-brand">结衣波多野种子迅雷</span>
+    <div class="notice-track">
+      <span><b>11-08</b>《南国慢车》四集全 BD 版索引更新</span>
+      <span><b>11-06</b>波多野结衣 2019 年作品年表补入 3 条</span>
+      <span><b>11-03</b>结衣影像档案新增 1080p 修复版对照</span>
+      <span><b>11-01</b>迅雷离线可用性说明页改版</span>
+      <span><b>10-29</b>番号分类新增“剧情长片”子项</span>
+    </div>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="site-head">
+  <div class="head-inner">
+    <a class="logo" href="/#top" aria-label="结衣波多野种子迅雷首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#22304d"/>
+        <path d="M18 22h28v5.5H18zm0 9.5h28V37H18zm0 9.5h19v5.5H18z" fill="#e8b04b"/>
+        <circle cx="48" cy="44" r="7" fill="none" stroke="#e8b04b" stroke-width="3"/>
+      </svg>
+      <span class="logo-text">结衣波多野种子迅雷</span>
+    </a>
+    <nav class="main-nav" aria-label="主题导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#featured">作品精选</a>
+      <a href="/#updates">更新动态</a>
+      <a href="/#category">番号分类</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">观看指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">观众评论</a>
+      <a href="/#news">相关资讯</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-box">
+        <input type="search" id="siteSearch" placeholder="搜作品名 / 番号" aria-label="站内内容查找">
+        <button type="button" id="searchBtn">查找</button>
+      </div>
+      <a class="quick-link" href="/#submit">投稿入口</a>
+      <button class="burger" id="burgerBtn" aria-label="打开导航菜单" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mask" id="mask"></div>
+<nav class="mobile-nav" id="mobileNav" aria-label="移动端导航">
+  <a href="/#overview">领域概览</a>
+  <a href="/#featured">作品精选</a>
+  <a href="/#updates">更新动态</a>
+  <a href="/#category">番号分类</a>
+  <a href="/#deep">深度解析</a>
+  <a href="/#guide">观看指南</a>
+  <a href="/#faq">常见问答</a>
+  <a href="/#comments">观众评论</a>
+  <a href="/#news">相关资讯</a>
+  <a href="/#submit">投稿入口</a>
+</nav>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-deco" aria-hidden="true">
+    <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="g1" cx="70%" cy="30%" r="55%">
+          <stop offset="0%" stop-color="#f0c274" stop-opacity=".28"/>
+          <stop offset="100%" stop-color="#f0c274" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="800" height="400" fill="url(#g1)"/>
+      <g stroke="#8fa3c4" stroke-opacity=".22" fill="none">
+        <circle cx="640" cy="120" r="90"/>
+        <circle cx="640" cy="120" r="140"/>
+        <circle cx="640" cy="120" r="190"/>
+      </g>
+    </svg>
+  </div>
+  <div class="hero-inner">
+    <div>
+      <span class="hero-kicker">作品索引 · 番号分类 · 版本对照</span>
+      <h1>结衣波多野种子迅雷</h1>
+      <p class="hero-desc">汇集波多野结衣主演作品的番号目录、发行年份、版本规格与资源格式说明，同时整理结衣系影像档案的分集条目与修复版差异，方便按番号、年份、题材三条线索查找与比对。</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="/#featured">浏览作品条目</a>
+        <a class="btn-ghost" href="/#category">按番号查分类</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>1,286</strong>作品索引条目</div>
+        <div><strong>42</strong>番号系列分类</div>
+        <div><strong>11-08</strong>最近一次条目更新</div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 300" role="presentation">
+        <rect x="30" y="30" width="240" height="150" rx="10" fill="#eef2f9" opacity=".92"/>
+        <rect x="46" y="48" width="120" height="9" rx="4" fill="#22304d" opacity=".7"/>
+        <rect x="46" y="66" width="180" height="6" rx="3" fill="#9aa8bf"/>
+        <rect x="46" y="80" width="150" height="6" rx="3" fill="#9aa8bf"/>
+        <rect x="46" y="104" width="76" height="56" rx="6" fill="#c8801f" opacity=".8"/>
+        <rect x="132" y="104" width="76" height="56" rx="6" fill="#3a4d74" opacity=".65"/>
+        <rect x="150" y="120" width="180" height="150" rx="10" fill="#dfe6f2" opacity=".95"/>
+        <rect x="166" y="138" width="90" height="9" rx="4" fill="#22304d" opacity=".7"/>
+        <rect x="166" y="156" width="148" height="6" rx="3" fill="#9aa8bf"/>
+        <rect x="166" y="170" width="120" height="6" rx="3" fill="#9aa8bf"/>
+        <rect x="166" y="194" width="148" height="44" rx="6" fill="#22304d" opacity=".18"/>
+        <rect x="166" y="246" width="60" height="18" rx="9" fill="#c8801f" opacity=".85"/>
+      </svg>
+      <div class="hero-card-float">
+        <b>11-08 索引快照</b>
+        近 30 天新增 27 条作品条目，其中 9 条含多版本规格对照
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 主体三栏 -->
+<div class="layout">
+
+  <!-- 左频道索引 -->
+  <aside class="channel-col" aria-label="频道索引">
+    <div class="channel-card">
+      <div class="channel-title">番号频道</div>
+      <nav class="channel-list" aria-label="番号分类导航">
+        <a href="/#category">剧情长片<em>186</em></a>
+        <a href="/#category">单体作品<em>243</em></a>
+        <a href="/#category">合集精选<em>97</em></a>
+        <a href="/#category">结衣影像档案<em>64</em></a>
+        <a href="/#category">高清修复版<em>51</em></a>
+        <a href="/#category">蓝光原盘<em>38</em></a>
+        <a href="/#category">年份年表<em>19</em></a>
+        <a href="/#category">幕后花絮<em>22</em></a>
+        <a href="/#updates">更新动态<em>11-08</em></a>
+        <a href="/#news">相关资讯<em>6</em></a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- 主内容 -->
+  <main class="main-col">
+
+    <!-- 1 领域概览 -->
+    <section class="section" id="overview">
+      <div class="section-head"><h2>作品索引领域概览</h2><span class="more">索引口径说明</span></div>
+      <div class="overview">
+        <p>这一领域围绕的是日本演员波多野结衣出演作品的可检索信息：番号（发行编号）、发行年份、片长、版本规格、题材分类与衍生档案。观众查找时通常先锁定番号，再确认版本，最后比对资源格式。番号体系本身有规律可循——多数厂商采用“字母缩写＋三位数字”的编号方式，例如结衣系早期作品多集中在 2010 至 2013 年，编号前缀可反推发行方。</p>
+        <p>当前值得关注的方向集中在三块。其一是高清修复版，2024 年后陆续有旧作以 1080p 重新压制，画质与原始 DVD 版差异明显，部分条目还附带了重新制作的封面与字幕。其二是合集类条目，厂商把同一题材的单体作品打包成 4 至 8 小时的合辑，番号往往带“BEST”或“COLLECTION”字样，查找时容易与单体作品混淆。其三是结衣影像档案这类非发行方主导的整理条目，按年份与题材重新编目，侧重演员作品轨迹而非单部发行信息。</p>
+        <p>资源格式层面，种子文件与磁力链接是常见的分发形态，迅雷作为下载工具承载离线任务。同一部作品可能同时存在 BD 原盘、1080p 压制、720p 压缩三种规格，文件体积从 1.2GB 到 40GB 不等。查找时需要先确认自己要的是画质优先还是体积优先，再决定取哪一种版本。番号写错一位，检索结果可能完全落到另一部作品上，这是入门阶段最常见的失误。</p>
+      </div>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="section" id="featured">
+      <div class="section-head"><h2>本周精选作品条目</h2><span class="more">共 8 条</span></div>
+      <p class="lead">按条目完整度、版本规格与近期检索量综合排序，每条标注番号与发行年份。</p>
+      <div class="grid-cards" id="featuredGrid">
+        <article class="card" data-key="南国慢车 剧情长片 1080p">
+          <div class="card-thumb"><img src="https://picsum.photos/seed/jieyi-nanguo01/400/300" width="400" height="300" loading="lazy" alt="《南国慢车》四集全剧情长片封面占位图"><span class="card-badge">1080p 修复</span></div>
+          <div class="card-body">
+            <h3><a href="/#featured">南国慢车 四集全</a></h3>
+            <p class="card-note">2012 年发行的四集连续剧情，修复版补回了原版删减的 11 分钟段落，列车车厢长镜头与站台收尾两场差异最明显。</p>
+            <div class="tag-row"><span class="tag">剧情长片</span><span class="tag">四集全</span><span class="tag warm">修复版</span></div>
+            <div class="card-meta"><span>热度 <b>9,420</b></span><span>评分 8.6</span></div>
+          </div>
+        </article>
+        <article class="card" data-key="夏日信箱 单体作品 720p">
+          <div class="card-thumb"><img src="https://picsum.photos/seed/jieyi-xiari02/400/300" width="400" height="300" loading="lazy" alt="《夏日信箱》单体作品封面占位图"><span class="card-badge">单体作品</span></div>
+          <div class="card-body">
+            <h3><a href="/#featured">夏日信箱</a></h3>
+            <p class="card-note">2011 年单体作品，片长 118 分钟，全片以海边小镇为背景，室内戏占比高，720p 版本体积仅 1.4GB，适合先看内容再决定是否换高清。</p>
+            <div class="tag-row"><span class="tag">单体作品</span><span class="tag">海边题材</span><span class="tag warm">小体积</span></div>
+            <div class="card-meta"><span>热度 <b>7,180</b></span><span>评分 7.9</span></div>
+          </div>
+        </article>
+        <article class="card" data-key="结衣影像档案 年表 2010-2013">
+          <div class="card-thumb"><img src="https://picsum.photos/seed/jieyi-dangan03/400/300" width="400" height="300" loading="lazy" alt="结衣影像档案 2010 至 2013 年表封面占位图"><span class="card-badge">档案整理</span></div>
+          <div class="card-body">
+            <h3><a href="/#featured">结衣影像档案 2010—2013 年表</a></h3>
+            <p class="card-note">按发行月份排列的早期作品年表，标注了每部作品的番号前缀、厂商与片长，附 3 条已确认的再版记录。</p>
+            <div class="tag-row"><span class="tag">影像档案</span><span class="tag">年份年表</span><span class="tag">番号前缀</span></div>
+            <div class="card-meta"><span>热度 <b>6,530</b></span><span>更新 11-06</span></div>
+          </div>
+        </article>
+        <article class="card" data-key="BEST 合集 8小时 蓝光">
+          <div class="card-thumb"><img src="https://picsum.photos/seed/jieyi-best04/400/300" width="400" height="300" loading="lazy" alt="结衣系 BEST 合集 8 小时版封面占位图"><span class="card-badge">合集精选</span></div>
+          <div class="card-body">
+            <h3><a href="/#featured">结衣系 BEST 合集 8 小时版</a></h3>
+            <p class="card-note">由 6 部单体作品剪辑拼接，番号带 COLLECTION 字样，蓝光原盘 38GB，与单体版重复段落约 72%，选购前建议先比对片单。</p>
+            <div class="tag-row"><span class="tag">合集精选</span><span class="tag">蓝光原盘</span><span class="tag warm">大体积</span></div>
+            <div class="card-meta"><span>热度 <b>5,860</b></span><span>评分 7.4</span></div>
+          </div>
+        </article>
+        <article class="card" data-key="雨夜书店 剧情 修复">
+          <div class="card-thumb"><img src="https://picsum.photos/seed/jieyi-yuye05/400/300" width="400" height="300" loading="lazy" alt="《雨夜书店》剧情长片封面占位图"><span class="card-badge">1080p</span></div>
+          <div class="card-body">
+            <h3><a href="/#featured">雨夜书店</a></h3>
+            <p class="card-note">2013 年作品，室内场景集中在书店与公寓两处，修复版把原版偏黄的色调调回中性，书架细节清晰度提升明显。</p>
+            <div class="tag-row"><span class="tag">剧情长片</span><span class="tag">室内戏</span><span class="tag warm">调色修复</span></div>
+            <div class="card-meta"><span>热度 <b>5,240</b></span><span>评分 8.2</span></div>
+          </div>
+        </article>
+        <article class="card" data-key="幕后花絮 拍摄记录 22分钟">
+          <div class="card-thumb"><img src="https://picsum.photos/seed/jieyi-huaxu06/400/300" width="400" height="300" loading="lazy" alt="幕后花絮拍摄记录封面占位图"><span class="card-badge">幕后花絮</span></div>
+          <div class="card-body">
+            <h3><a href="/#featured">《南国慢车》拍摄记录 22 分钟</a></h3>
+            <p class="card-note">随修复版附带的幕后素材，含列车取景地的调度过程与演员对戏前的走位讨论，字幕为后期补配。</p>
+            <div class="tag-row"><span class="tag">幕后花絮</span><span class="tag">拍摄记录</span><span class="tag">附赠素材</span></div>
+            <div class="card-meta"><span>热度 <b>4,910</b></span><span>时长 22 分</span></div>
+          </div>
+        </article>
+        <article class="card" data-key="海边旅馆 单体 720p">
+          <div class="card-thumb"><img src="https://picsum.photos/seed/jieyi-haibian07/400/300" width="400" height="300" loading="lazy" alt="《海边旅馆》单体作品封面占位图"><span class="card-badge">单体作品</span></div>
+          <div class="card-body">
+            <h3><a href="/#featured">海边旅馆</a></h3>
+            <p class="card-note">2012 年发行，全片只有一个主场景，镜头语言偏静态，720p 版本 1.6GB，适合对画质要求不高、先确认题材的观众。</p>
+            <div class="tag-row"><span class="tag">单体作品</span><span class="tag">单场景</span><span class="tag warm">入门可看</span></div>
+            <div class="card-meta"><span>热度 <b>4,360</b></span><span>评分 7.1</span></div>
+          </div>
+        </article>
+        <article class="card" data-key="番号对照表 2010-2015 厂商">
+          <div class="card-thumb"><img src="https://picsum.photos/seed/jieyi-duizhao08/400/300" width="400" height="300" loading="lazy" alt="番号对照表 2010 至 2015 年厂商分类封面占位图"><span class="card-badge">工具条目</span></div>
+          <div class="card-body">
+            <h3><a href="/#featured">番号对照表 2010—2015</a></h3>
+            <p class="card-note">按厂商缩写整理的番号前缀对照，涵盖 7 家发行方，标注了同番号在不同地区的再版差异，查找时先对前缀再查数字。</p>
+            <div class="tag-row"><span class="tag">番号对照</span><span class="tag">厂商缩写</span><span class="tag">工具条目</span></div>
+            <div class="card-meta"><span>热度 <b>3,980</b></span><span>更新 11-01</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="empty-tip" id="emptyTip">未找到匹配条目，换个番号或作品名再试。</div>
+    </section>
+
+    <!-- 3 更新动态 -->
+    <section class="section" id="updates">
+      <div class="section-head"><h2>条目更新与进度动态</h2><span class="more">近 30 天 10 条</span></div>
+      <div class="update-list">
+        <div class="update-item"><span class="update-date">11-08</span><div class="update-main"><h3><a href="/#updates"><span class="update-kind">条目</span>《南国慢车》四集全 BD 版索引补入分集时长</a></h3><p>四集分别标注 42、38、45、51 分钟，与早期 DVD 版单碟合集的总时长核对后存在 11 分钟差异。</p></div></div>
+        <div class="update-item"><span class="update-date">11-06</span><div class="update-main"><h3><a href="/#updates"><span class="update-kind">年表</span>波多野结衣 2019 年作品年表补入 3 条</a></h3><p>补入的三条均带发行月份与番号前缀，其中一条为合集类，已单独标注避免与单体作品混淆。</p></div></div>
+        <div class="update-item"><span class="update-date">11-05</span><div class="update-main"><h3><a href="/#updates"><span class="update-kind">版本</span>《雨夜书店》修复版与 DVD 版画面对照上线</a></h3><p>对照取书店第 12 分钟同一机位截图，修复版色温从偏黄调整为中性，书架标签字符可辨认。</p></div></div>
+        <div class="update-item"><span class="update-date">11-03</span><div class="update-main"><h3><a href="/#updates"><span class="update-kind">档案</span>结衣影像档案新增 1080p 修复版对照表</a></h3><p>对照表覆盖 14 部作品，逐条列出原始分辨率、修复分辨率与是否含新增段落。</p></div></div>
+        <div class="update-item"><span class="update-date">11-01</span><div class="update-main"><h3><a href="/#updates"><span class="update-kind">说明</span>迅雷离线可用性说明页改版</a></h3><p>新增按文件体积分档的离线成功率区间描述，删除了旧版中未标注日期的笼统表述。</p></div></div>
+        <div class="update-item"><span class="update-date">10-29</span><div class="update-main"><h3><a href="/#updates"><span class="update-kind">分类</span>番号分类新增“剧情长片”子项</a></h3><p>子项收录 186 条，按四集以上连续剧情归入，与单体作品的划界标准同步写入分类说明。</p></div></div>
+        <div class="update-item"><span class="update-date">10-26</span><div class="update-main"><h3><a href="/#updates"><span class="update-kind">合集</span>BEST 合集重复段落统计方法公开</a></h3><p>统计以单体作品为基准，逐段比对时间轴，重复率按分钟数除以合辑总时长计算。</p></div></div>
+        <div class="update-item"><span class="update-date">10-22</span><div class="update-main"><h3><a href="/#updates"><span class="update-kind">条目</span>《夏日信箱》补入 2011 年首版发行信息</a></h3><p>首版为单碟装，片长 118 分钟，后续再版未改动正片内容，仅更新了包装与菜单。</p></div></div>
+        <div class="update-item"><span class="update-date">10-18</span><div class="update-main"><h3><a href="/#updates"><span class="update-kind">工具</span>番号对照表扩充至 7 家厂商</a></h3><p>新增两家发行方的缩写前缀，并对 2014 年后的编号位数变化做了单独说明。</p></div></div>
+        <div class="update-item"><span class="update-date">10-12</span><div class="update-main"><h3><a href="/#updates"><span class="update-kind">索引</span>蓝光原盘条目统一标注文件体积</a></h3><p>38 条蓝光条目全部补上 GB 级体积数据，便于与 1080p 压制版做取舍比较。</p></div></div>
+      </div>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="section" id="category">
+      <div class="section-head"><h2>番号与题材分类入口</h2><span class="more">8 个分类</span></div>
+      <div class="cat-grid">
+        <a class="cat-item" href="/#category"><strong>剧情长片</strong><span>四集以上连续剧情，186 条，含分集时长与修复版标注</span></a>
+        <a class="cat-item" href="/#category"><strong>单体作品</strong><span>单碟发行，243 条，按片长与场景数排序</span></a>
+        <a class="cat-item" href="/#category"><strong>合集精选</strong><span>BEST 与 COLLECTION 类，97 条，附重复段落比例</span></a>
+        <a class="cat-item" href="/#category"><strong>结衣影像档案</strong><span>按年份重编的作品轨迹，64 条，含再版记录</span></a>
+        <a class="cat-item" href="/#category"><strong>高清修复版</strong><span>1080p 重制，51 条，逐条对照原始分辨率</span></a>
+        <a class="cat-item" href="/#category"><strong>蓝光原盘</strong><span>38 条，标注 GB 级体积与压制版差异</span></a>
+        <a class="cat-item" href="/#category"><strong>年份年表</strong><span>2010 至 2023 年按月份排列，19 个年度页</span></a>
+        <a class="cat-item" href="/#category"><strong>幕后花絮</strong><span>拍摄记录与附赠素材，22 条，多数随修复版发行</span></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="section" id="deep">
+      <div class="section-head"><h2>番号、版本与资源格式的辨析</h2><span class="more">深度解析</span></div>
+      <article class="article">
+        <p>查找一部作品时，真正决定能否找到的往往不是演员名字，而是番号。番号写错一位，检索结果可能落到另一个厂商的另一部作品上。下面的拆解围绕三条线展开：番号的构成规则、版本之间的实质差异、资源格式的取舍依据。</p>
+
+        <h3>番号前缀如何反推厂商与年份</h3>
+        <p>多数发行方采用“字母缩写＋三位数字”的结构，字母部分对应厂商，数字部分是该厂商的发行序号。以 2010 至 2013 年的作品为例，同一前缀下的数字递增基本按发行时间推进，因此看到某个番号数字较小，可以大致判断它属于该厂商的早期发行。2014 年之后部分厂商改为四位数字，序号连续性被打断，单靠数字推年份的可靠性下降。</p>
+        <p>这里有一个可核对的中段：把《南国慢车》四集全的番号与同前缀下相邻数字的作品放在一起比对，会发现前一部与后一部的发行月份相差不到两个月，而《南国慢车》自身的四集跨越了约七个月。这说明数字序号只保证厂商内部排序，不保证同一部作品的多集在时间上连续。查找多集作品时，逐集确认番号比记住一个总编号更稳妥。</p>
+        <ul>
+          <li>字母前缀：对应发行方，少数厂商会在前缀后加连字符</li>
+          <li>三位数字：厂商内部发行序号，2014 年前与发行时间大致正相关</li>
+          <li>后缀字母：常见于再版或修复版，同一正片可能带不同后缀</li>
+          <li>合集番号：多带 BEST、COLLECTION 字样，数字段往往重新起编</li>
+        </ul>
+
+        <h3>修复版与原始版的差异清单</h3>
+        <p>修复版不等于内容增加。以 2024 年后陆续出现的 1080p 重制为例，多数只做分辨率提升与调色，正片时长与原版一致；少数会补回删减段落，《南国慢车》修复版补回的 11 分钟属于后者。判断一部修复版值不值得重新获取，可以按下面几项逐条核对，缺哪一项就说明该版本的信息不完整。</p>
+        <table class="check-table">
+          <thead><tr><th>核对项</th><th>原始版</th><th>修复版常见变化</th></tr></thead>
+          <tbody>
+            <tr><td>分辨率</td><td>720×480 或 854×480</td><td>提升至 1920×1080，部分保留 4:3 画幅</td></tr>
+            <tr><td>正片时长</td><td>以首版为准</td><td>多数一致，少数补回删减段落</td></tr>
+            <tr><td>调色</td><td>偏黄或偏暖</td><td>调整为中性，暗部细节可见度提升</td></tr>
+            <tr><td>字幕</td><td>部分无字幕</td><td>重新制作，但并非全部条目都含</td></tr>
+            <tr><td>封面与菜单</td><td>原始设计</td><td>多数重做，与正片内容无直接关系</td></tr>
+          </tbody>
+        </table>
+        <p>这张表里最容易出错的是“正片时长”一项。修复版宣传语常写“完整版”，但完整指的是未被删减，而非比原版更长。把两个版本的片长直接对比，差值大于零才说明有新增内容，差值为零则只是画质变化。</p>
+
+        <h3>资源格式的取舍：体积、画质与离线成功率</h3>
+        <p>同一部作品通常存在三种规格：蓝光原盘、1080p 压制、720p 压缩。蓝光原盘体积可达 38GB，1080p 压制多在 4 至 8GB，720p 压缩可低至 1.2GB。体积差异并非线性对应画质差异——在 1080p 屏幕上，1080p 压制与原盘的可见差距集中在暗部与快速运动画面，静态室内戏差距很小。</p>
+        <p>离线成功率与文件体积、种子健康度两项相关。体积超过 20GB 的条目，离线任务完成时间明显拉长，健康度低于 3 个做种时还可能中途停滞。判断一个条目是否值得挂离线，可以拆成三个环节看：做种数量是否稳定在三以上、文件是否分卷、发布时间是否在近两年内。三个环节里缺任意一项，失败概率都会上升。这不是猜测——把近 30 天站内标注了离线状态的条目按这三项分组，三项齐全的条目成功率明显高于缺项条目。</p>
+        <p>需要区分信息来源的层级。厂商公布的规格属于已公开事实；修复版是否补回段落，需要以实际片长核对为准，属于可验证项；至于某个种子“速度快不快”，多来自下载者的转述，属于经验层信息，参考价值低于前两类。把这三层混在一起谈，就容易出现“听说很好”却下载失败的落差。</p>
+      </article>
+    </section>
+
+    <!-- 6 观看指南 -->
+    <section class="section" id="guide">
+      <div class="section-head"><h2>内容消费顺序与判断依据</h2><span class="more">入门到进阶</span></div>
+      <div class="steps">
+        <div class="step"><span class="step-no">1</span><h3>先按题材锁定范围</h3><p>剧情长片与单体作品的观看节奏差别很大。四集全的作品适合整段投入，单体作品更适合先看 20 分钟确认题材是否合口味。</p></div>
+        <div class="step"><span class="step-no">2</span><h3>再核对番号与年份</h3><p>同一演员的作品横跨十余年，早期作品与后期作品在拍摄手法、场景布置上差异明显。番号前缀能帮你判断大致年份区间。</p></div>
+        <div class="step"><span class="step-no">3</span><h3>确认版本规格</h3><p>720p 先看内容，确认喜欢再换 1080p 或原盘。修复版是否含新增段落，看片长差值，不看宣传语。</p></div>
+        <div class="step"><span class="step-no">4</span><h3>比较合集与单体</h3><p>合集重复率高，先用单体片单比对。8 小时合集里若有 5 小时已在单体条目看过，剩下的 3 小时才是新增内容。</p></div>
+        <div class="step"><span class="step-no">5</span><h3>按体积选资源格式</h3><p>移动设备或存储紧张时选 720p；固定屏幕观看选 1080p 压制；只有确认要长期保存才考虑原盘。</p></div>
+        <div class="step"><span class="step-no">6</span><h3>留意条目更新时间</h3><p>修复版与再版信息会持续补充，同一番号的条目可能在数月内多次修订，查找前看一眼更新日期能避免用到旧规格。</p></div>
+      </div>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="section" id="faq">
+      <div class="section-head"><h2>查找与版本常见问答</h2><span class="more">6 问</span></div>
+      <div class="faq">
+        <details>
+          <summary>番号里的字母前缀代表什么？</summary>
+          <p>字母前缀通常对应发行厂商，同一前缀下的数字是该厂商的内部发行序号。少数厂商会在前缀后加连字符再跟数字，也有厂商在再版时更换前缀但保留正片内容。看到不熟悉的前缀，先查厂商缩写对照，再核对数字段，比直接搜演员名更准。</p>
+        </details>
+        <details>
+          <summary>修复版一定比原版内容多吗？</summary>
+          <p>不一定。多数 1080p 修复只提升分辨率与调色，正片时长与原版一致。判断是否含新增内容，把两个版本的片长直接相减，差值为零说明只是画质变化。《南国慢车》修复版比 DVD 版多 11 分钟，属于少见的补回删减段落的情况。</p>
+        </details>
+        <details>
+          <summary>合集和单体作品怎么区分？</summary>
+          <p>合集番号多带 BEST、COLLECTION 字样，时长常在 4 小时以上，由多部单体作品剪辑拼接；单体作品片长多在 90 至 130 分钟，番号为常规数字段。合集的重复段落比例可以用单体片单逐段比对，重复率超过七成时，新增内容有限。</p>
+        </details>
+        <details>
+          <summary>720p 和 1080p 差距有多大？</summary>
+          <p>在 1080p 屏幕上，差距集中在暗部细节与快速运动画面，静态室内戏差别很小。720p 压缩版体积常在 1.2 至 1.6GB，1080p 压制版 4 至 8GB。先看 720p 确认题材，再决定是否换高清，是更省时间的顺序。</p>
+        </details>
+        <details>
+          <summary>离线任务失败通常卡在哪一步？</summary>
+          <p>常见卡点有三处：做种数量低于三个导致下载停滞、文件分卷后缺少其中一卷、条目发布时间过久导致源失效。体积超过 20GB 的条目完成时间明显拉长。把做种数、分卷完整性、发布年份三项逐一核对，能提前排除大部分失败情况。</p>
+        </details>
+        <details>
+          <summary>同一个番号为什么会有多个版本？</summary>
+          <p>再版、修复版、地区发行版都会沿用或微调番号，后缀字母常有变化。正片内容多数一致，差异集中在画质、字幕与包装。核对正片时长与是否含字幕，比只看番号后缀更能判断版本实质。</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="section" id="comments">
+      <div class="section-head"><h2>观众评论与条目反馈</h2><span class="more">16 条</span></div>
+      <div class="comments">
+        <div class="comment"><div class="comment-head"><span class="avatar">林</span><span class="comment-name">林间小径</span><span class="comment-time">11-08</span></div><p>《南国慢车》补回的 11 分钟确实值，站台那场原来看得莫名其妙，补上之后前后接得上了。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">陈</span><span class="comment-name">陈默</span><span class="comment-time">11-07</span></div><p>BEST 合集 38GB 下完才发现有一半在单体里看过了，怪自己没先比对片单。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">阿</span><span class="comment-name">阿森</span><span class="comment-time">11-07</span></div><p>番号对照表好用，之前一直把两家厂商的前缀搞混，查了才知道差一个字母。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">周</span><span class="comment-name">周末看片</span><span class="comment-time">11-06</span></div><p>《雨夜书店》修复版色温调回来之后顺眼多了，DVD 那版黄得有点过。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">小</span><span class="comment-name">小满</span><span class="comment-time">11-06</span></div><p>720p 先看的《夏日信箱》，1.4GB 挺快，画面在海边那几场略糊，室内没问题。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">老</span><span class="comment-name">老周</span><span class="comment-time">11-05</span></div><p>离线挂了两天没动，后来看是做种只有两个，换成另一个条目就好了。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">吴</span><span class="comment-name">吴桐</span><span class="comment-time">11-05</span></div><p>2019 年那三条补入的年表，有一条其实是合集，差点当成单体买了。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">许</span><span class="comment-name">许一</span><span class="comment-time">11-04</span></div><p>《海边旅馆》单场景，镜头几乎不动，看惯四集全的会觉得慢，我倒是挺喜欢。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">郑</span><span class="comment-name">郑野</span><span class="comment-time">11-03</span></div><p>修复版宣传写“完整版”，结果片长跟原版一样，白高兴一场。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">何</span><span class="comment-name">何夕</span><span class="comment-time">11-03</span></div><p>花絮那 22 分钟比正片有意思，走位讨论那段能看到调度怎么排的。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">沈</span><span class="comment-name">沈七</span><span class="comment-time">11-02</span></div><p>2014 年之后编号位数变了，我之前按三位数搜一直搜不到，对照表里写了这点。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">苏</span><span class="comment-name">苏木</span><span class="comment-time">11-01</span></div><p>最近换了显示器，1080p 压制和原盘的差距确实主要在暗部，白天场景几乎看不出。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">黄</span><span class="comment-name">黄泥</span><span class="comment-time">10-31</span></div><p>四集全的分集时长标出来之后，终于知道哪一集最长，第五集 51 分钟确实拖。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">罗</span><span class="comment-name">罗盘</span><span class="comment-time">10-30</span></div><p>字幕这块有点乱，有的修复版带有的不带，条目里没标清楚，得自己下完才知道。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">丁</span><span class="comment-name">丁小满</span><span class="comment-time">10-28</span></div><p>年表按月份排这点挺好，早年的作品月份一直查不到。</p></div>
+        <div class="comment"><div class="comment-head"><span class="avatar">梁</span><span class="comment-name">梁上</span><span class="comment-time">10-25</span></div><p>硬盘只剩 200G，原盘还是算了，1080p 压制够用。</p></div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="section" id="news">
+      <div class="section-head"><h2>作品与发行相关资讯</h2><span class="more">6 条</span></div>
+      <div class="news-list">
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/jieyi-news01/600/400" width="600" height="400" loading="lazy" alt="《南国慢车》修复版发行方公布片长核对的资讯配图">
+          <div class="news-body">
+            <h3><a href="/#news">《南国慢车》修复版发行方公布片长核对表</a></h3>
+            <p>发行方在 11 月 6 日发布说明，列出四集各自时长与 DVD 版差值，其中第四集差 7 分钟，为全片最大差异项。</p>
+            <span class="news-date">2026-11-07</span>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/jieyi-news02/600/400" width="600" height="400" loading="lazy" alt="结衣影像档案年表扩充的资讯配图">
+          <div class="news-body">
+            <h3><a href="/#news">结衣影像档案年表扩充至 2013 年 12 月</a></h3>
+            <p>整理方 11 月 6 日补入 3 条 2019 年作品记录，并说明 2014 年后编号位数变化，年表页同步更新检索说明。</p>
+            <span class="news-date">2026-11-06</span>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/jieyi-news03/600/400" width="600" height="400" loading="lazy" alt="BEST 合集重复率统计方法公开的资讯配图">
+          <div class="news-body">
+            <h3><a href="/#news">BEST 合集重复率统计口径公开，按分钟数计算</a></h3>
+            <p>统计方 10 月 26 日说明，重复率以单体作品时间轴为基准逐段比对，分子为重复分钟数，分母为合辑总时长。</p>
+            <span class="news-date">2026-10-27</span>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/jieyi-news04/600/400" width="600" height="400" loading="lazy" alt="番号对照表扩充厂商的资讯配图">
+          <div class="news-body">
+            <h3><a href="/#news">番号对照表新增两家发行方前缀</a></h3>
+            <p>10 月 18 日更新后，对照表覆盖 7 家厂商，新增前缀中有一家采用四位数字，与旧表的三位结构不同。</p>
+            <span class="news-date">2026-10-19</span>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/jieyi-news05/600/400" width="600" height="400" loading="lazy" alt="蓝光原盘条目补标体积的资讯配图">
+          <div class="news-body">
+            <h3><a href="/#news">38 条蓝光原盘条目完成体积补标</a></h3>
+            <p>10 月 12 日完成的补标显示，原盘体积集中在 22 至 40GB 区间，其中 6 条超过 35GB，与压制版差距最大。</p>
+            <span class="news-date">2026-10-13</span>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="https://picsum.photos/seed/jieyi-news06/600/400" width="600" height="400" loading="lazy" alt="《夏日信箱》首版发行信息补入的资讯配图">
+          <div class="news-body">
+            <h3><a href="/#news">《夏日信箱》补入 2011 年首版单碟发行记录</a></h3>
+            <p>首版片长 118 分钟，后续再版未改动正片，仅更新菜单与包装，条目页已按首版时间标注。</p>
+            <span class="news-date">2026-10-22</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="section" id="related">
+      <div class="section-head"><h2>相关条目方向索引</h2><span class="more">8 个方向</span></div>
+      <div class="index-tags">
+        <a href="/#featured">四集全剧情长片</a>
+        <a href="/#featured">单场景单体作品</a>
+        <a href="/#category">BEST 合集重复率</a>
+        <a href="/#category">1080p 调色修复</a>
+        <a href="/#category">蓝光原盘体积对照</a>
+        <a href="/#deep">番号前缀厂商对照</a>
+        <a href="/#guide">720p 与 1080p 取舍</a>
+        <a href="/#updates">2010—2013 年表</a>
+      </div>
+    </section>
+
+    <!-- 11 补充：热门榜单 -->
+    <section class="section" id="ranking">
+      <div class="section-head"><h2>条目检索热度榜</h2><span class="more">11-08 统计</span></div>
+      <div class="rank-list">
+        <div class="rank-item"><span class="rank-no">1</span><span class="rank-name">南国慢车 四集全<small>修复版 · 剧情长片</small></span><span class="rank-score">9,420</span></div>
+        <div class="rank-item"><span class="rank-no">2</span><span class="rank-name">夏日信箱<small>单体作品 · 2011</small></span><span class="rank-score">7,180</span></div>
+        <div class="rank-item"><span class="rank-no">3</span><span class="rank-name">结衣影像档案年表<small>档案整理 · 2010—2013</small></span><span class="rank-score">6,530</span></div>
+        <div class="rank-item"><span class="rank-no">4</span><span class="rank-name">BEST 合集 8 小时版<small>合集精选 · 蓝光</small></span><span class="rank-score">5,860</span></div>
+        <div class="rank-item"><span class="rank-no">5</span><span class="rank-name">雨夜书店<small>剧情长片 · 调色修复</small></span><span class="rank-score">5,240</span></div>
+        <div class="rank-item"><span class="rank-no">6</span><span class="rank-name">拍摄记录 22 分钟<small>幕后花絮 · 附赠</small></span><span class="rank-score">4,910</span></div>
+      </div>
+    </section>
+
+    <!-- 12 投稿互动 -->
+    <section class="section" id="submit">
+      <div class="section-head"><h2>条目纠错与投稿交流</h2><span class="more">参与入口</span></div>
+      <div class="overview">
+        <p>番号、片长、版本规格三类信息最容易出错，尤其是合集与单体作品的划界。手上有可核对的发行记录、片长截图或调色对照的，可以按条目名提交纠错；修复版是否含新增段落，欢迎附上两个版本的片长实测。</p>
+        <p>投稿范围包括：未收录的作品条目、版本差异说明、番号前缀对照补充。提交时注明番号、厂商缩写与核对来源，信息完整的条目会优先进入年表与分类页。幕后花絮、拍摄记录一类附赠素材，若手上有发行方说明，也一并欢迎。</p>
+        <p style="margin-bottom:0"><a class="btn-primary" href="/#submit" style="display:inline-block">提交条目纠错</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右辅助栏 -->
+  <aside class="aside-col" aria-label="辅助信息">
+    <div class="aside-card">
+      <h3>今日更新条目</h3>
+      <ul class="hot-list">
+        <li><span class="n">1</span><a href="/#updates">南国慢车 分集时长</a></li>
+        <li><span class="n">2</span><a href="/#updates">2019 年表补入 3 条</a></li>
+        <li><span class="n">3</span><a href="/#updates">雨夜书店 画面对照</a></li>
+        <li><span class="n">4</span><a href="/#updates">修复版对照表 14 部</a></li>
+        <li><span class="n">5</span><a href="/#updates">离线说明页改版</a></li>
+        <li><span class="n">6</span><a href="/#updates">剧情长片子项上线</a></li>
+      </ul>
+    </div>
+
+    <div class="aside-card">
+      <h3>版本更新时间线</h3>
+      <ul class="timeline">
+        <li><b>11-08</b>四集全补入分集时长</li>
+        <li><b>11-05</b>《雨夜书店》调色对照</li>
+        <li><b>11-03</b>1080p 修复版对照表</li>
+        <li><b>10-29</b>剧情长片分类上线</li>
+        <li><b>10-12</b>蓝光条目补标体积</li>
+      </ul>
+    </div>
+
+    <div class="submit-box">
+      <h3>番号纠错</h3>
+      <p>番号写错一位就可能查到另一部作品。手上有发行记录或片长实测的，直接提交。</p>
+      <a href="/#submit">进入投稿入口</a>
+    </div>
+  </aside>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div>
+      <div class="foot-brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#2c3f63"/>
+          <path d="M18 22h28v5.5H18zm0 9.5h28V37H18zm0 9.5h19v5.5H18z" fill="#e8b04b"/>
+          <circle cx="48" cy="44" r="7" fill="none" stroke="#e8b04b" stroke-width="3"/>
+        </svg>
+        <span>结衣波多野种子迅雷</span>
+      </div>
+      <p class="foot-desc">条目覆盖 2010 至 2023 年的发行记录，以番号、片长、版本规格三类字段为主，含单体作品、四集全剧情、BEST 合集与修复版对照，年表按月更新，修复版信息随发行方说明持续补充。</p>
+      <p class="foot-meta">示例数据说明：站内热度、评分与评论为演示用示例内容，不对应真实发行数据。版权归各发行方所有。</p>
+    </div>
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h4>作品分类</h4>
+        <a href="/#category">剧情长片</a>
+        <a href="/#category">单体作品</a>
+        <a href="/#category">合集精选</a>
+        <a href="/#category">高清修复版</a>
+      </div>
+      <div class="foot-col">
+        <h4>查档入口</h4>
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">作品精选</a>
+        <a href="/#updates">更新动态</a>
+        <a href="/#ranking">热度榜单</a>
+      </div>
+      <div class="foot-col">
+        <h4>阅读与参与</h4>
+        <a href="/#deep">番号辨析</a>
+        <a href="/#guide">观看指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#submit">投稿纠错</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 结衣波多野种子迅雷 · 内容索引示例页</span>
+    <span>最近更新：2026-11-08 ·《南国慢车》四集全分集时长补入</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var burger=document.getElementById('burgerBtn');
+  var mobileNav=document.getElementById('mobileNav');
+  var mask=document.getElementById('mask');
+  function closeNav(){
+    if(mobileNav)mobileNav.classList.remove('open');
+    if(mask)mask.classList.remove('open');
+    if(burger){burger.setAttribute('aria-expanded','false');}
+  }
+  if(burger){
+    burger.addEventListener('click',function(){
+      var open=mobileNav.classList.toggle('open');
+      mask.classList.toggle('open',open);
+      burger.setAttribute('aria-expanded',open?'true':'false');
+    });
+  }
+  if(mask)mask.addEventListener('click',closeNav);
+  if(mobileNav){
+    mobileNav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeNav);});
+  }
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape')closeNav();
+  });
+
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>window.innerHeight){toTop.classList.add('show');}
+    else{toTop.classList.remove('show');}
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  // 站内查找
+  var input=document.getElementById('siteSearch');
+  var btn=document.getElementById('searchBtn');
+  var grid=document.getElementById('featuredGrid');
+  var empty=document.getElementById('emptyTip');
+  function doSearch(){
+    if(!grid)return;
+    var q=(input.value||'').trim().toLowerCase();
+    var cards=grid.querySelectorAll('.card');
+    var hit=0;
+    cards.forEach(function(c){
+      var key=(c.getAttribute('data-key')||'')+' '+(c.textContent||'').toLowerCase();
+      var show=!q||key.indexOf(q)>-1;
+      c.style.display=show?'':'none';
+      if(show)hit++;
+    });
+    if(empty)empty.style.display=(q&&hit===0)?'block':'none';
+  }
+  if(btn)btn.addEventListener('click',doSearch);
+  if(input)input.addEventListener('input',doSearch);
+  if(input)input.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();doSearch();}});
+
+  // 侧栏频道高亮
+  var sections=document.querySelectorAll('main .section[id]');
+  var channelLinks=document.querySelectorAll('.channel-list a');
+  if(sections.length&&channelLinks.length){
+    window.addEventListener('scroll',function(){
+      var pos=window.scrollY+120;
+      var cur='';
+      sections.forEach(function(s){if(s.offsetTop<=pos)cur=s.id;});
+      channelLinks.forEach(function(a){
+        var href=a.getAttribute('href')||'';
+        a.classList.toggle('active',cur&&href==='/# '+cur);
+      });
+    },{passive:true});
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"结衣波多野种子迅雷",
+  "description":"聚合日本影视作品番号索引、版本规格与修复版对照的条目页",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"番号里的字母前缀代表什么？","acceptedAnswer":{"@type":"Answer","text":"字母前缀通常对应发行厂商，同一前缀下的数字是该厂商的内部发行序号。看到不熟悉的前缀先查厂商缩写对照，再核对数字段。"}},
+    {"@type":"Question","name":"修复版一定比原版内容多吗？","acceptedAnswer":{"@type":"Answer","text":"不一定。多数1080p修复只提升分辨率与调色，正片时长与原版一致。把两个版本片长相减，差值为零说明只是画质变化。"}},
+    {"@type":"Question","name":"合集和单体作品怎么区分？","acceptedAnswer":{"@type":"Answer","text":"合集番号多带BEST、COLLECTION字样，时长常在4小时以上，由多部单体作品剪辑拼接；单体作品片长多在90至130分钟。"}},
+    {"@type":"Question","name":"720p和1080p差距有多大？","acceptedAnswer":{"@type":"Answer","text":"在1080p屏幕上差距集中在暗部细节与快速运动画面，静态室内戏差别很小。720p压缩版体积常在1.2至1.6GB，1080p压制版4至8GB。"}},
+    {"@type":"Question","name":"离线任务失败通常卡在哪一步？","acceptedAnswer":{"@type":"Answer","text":"常见卡点有三处：做种数量低于三个导致下载停滞、文件分卷后缺少其中一卷、条目发布时间过久导致源失效。"}},
+    {"@type":"Question","name":"同一个番号为什么会有多个版本？","acceptedAnswer":{"@type":"Answer","text":"再版、修复版、地区发行版都会沿用或微调番号，后缀字母常有变化。核对正片时长与是否含字幕，比只看番号后缀更能判断版本实质。"}}
+  ]
+}
+</script>
+</body>
+  </html>

@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>巨乳XXX - 作品聚合与类型解析</title>
+<meta name="description" content="巨乳XXX 聚合具体作品条目、类型标签、更新动态与用户评论。覆盖插画、漫画、影像等形态，提供可检索的分类索引与体验判断依据。">
+<meta name="keywords" content="巨乳XXX">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c2185b'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3E巨%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --primary:#c2185b;
+  --primary-light:#f8bbd0;
+  --primary-dark:#880e4f;
+  --bg:#fdf7f9;
+  --surface:#ffffff;
+  --text:#2d1b22;
+  --text-2:#6d4c57;
+  --text-3:#9e7e89;
+  --border:#f0e2e7;
+  --radius-card:12px;
+  --radius-btn:8px;
+  --radius-tag:20px;
+  --shadow:0 1px 4px rgba(45,27,34,.06);
+  --shadow-hover:0 4px 16px rgba(45,27,34,.12);
+  --header-h:108px;
+  --max-w:1320px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--header-h)}
+body{
+  font-family:-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;cursor:pointer}
+
+/* ===== 吸顶公告条 + 页头 ===== */
+.sticky-wrap{position:sticky;top:0;z-index:100}
+.notice-bar{
+  background:var(--primary-dark);color:#fff;font-size:13px;
+  display:flex;align-items:center;gap:12px;
+  padding:7px 20px;overflow:hidden;white-space:nowrap;
+}
+.notice-bar .notice-brand{
+  background:var(--primary);padding:1px 8px;border-radius:4px;
+  font-weight:600;flex-shrink:0;font-size:12px;
+}
+.notice-bar .notice-items{display:flex;gap:24px;overflow:hidden;text-overflow:ellipsis}
+.notice-bar .notice-items span{opacity:.92}
+.notice-bar .notice-items b{color:var(--primary-light);font-weight:600}
+
+header.site-header{
+  background:rgba(255,255,255,.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  padding:0 20px;
+}
+.header-inner{
+  max-width:var(--max-w);margin:0 auto;
+  display:flex;align-items:center;gap:20px;height:64px;
+}
+.logo{display:flex;align-items:center;gap:9px;flex-shrink:0}
+.logo svg{width:34px;height:34px}
+.logo-text{font-size:19px;font-weight:800;letter-spacing:.5px;color:var(--primary-dark)}
+.main-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap;margin-left:8px}
+.main-nav a{
+  font-size:14px;color:var(--text-2);padding:6px 11px;border-radius:var(--radius-btn);
+  transition:background .2s,color .2s;white-space:nowrap;
+}
+.main-nav a:hover,.main-nav a.active{background:var(--primary-light);color:var(--primary-dark);font-weight:600}
+.header-search{
+  display:flex;align-items:center;background:var(--bg);border:1px solid var(--border);
+  border-radius:var(--radius-btn);padding:0 4px 0 10px;flex-shrink:0;
+}
+.header-search input{
+  border:none;background:transparent;outline:none;font-size:13px;
+  width:130px;padding:7px 0;color:var(--text);
+}
+.header-search button{
+  border:none;background:var(--primary);color:#fff;border-radius:6px;
+  padding:5px 10px;font-size:12px;transition:background .2s;
+}
+.header-search button:hover{background:var(--primary-dark)}
+.hamburger{display:none;background:none;border:none;padding:8px;flex-direction:column;gap:4px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:.25s}
+.mobile-mask{display:none;position:fixed;inset:0;background:rgba(45,27,34,.45);z-index:90}
+
+/* ===== 首屏 ===== */
+.hero{
+  background:linear-gradient(135deg,#3d0f27 0%,#7a1a42 45%,#c2185b 100%);
+  color:#fff;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;right:-80px;top:-120px;
+  width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(248,187,208,.28),transparent 68%);
+}
+.hero::after{
+  content:"";position:absolute;left:8%;bottom:-150px;
+  width:300px;height:300px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.08),transparent 70%);
+}
+.hero-inner{
+  max-width:var(--max-w);margin:0 auto;padding:56px 20px 48px;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;
+  position:relative;z-index:1;
+}
+.hero-badge{
+  display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);
+  font-size:12px;padding:3px 12px;border-radius:var(--radius-tag);margin-bottom:16px;letter-spacing:1px;
+}
+.hero h1{
+  font-size:40px;line-height:1.2;font-weight:900;letter-spacing:1px;margin-bottom:14px;
+}
+.hero p.hero-desc{
+  font-size:15px;color:rgba(255,255,255,.86);max-width:480px;margin-bottom:26px;line-height:1.8;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{
+  background:#fff;color:var(--primary-dark);font-weight:700;font-size:14px;
+  padding:10px 24px;border-radius:var(--radius-btn);border:none;
+  transition:transform .2s,box-shadow .2s;
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.btn-ghost{
+  background:transparent;color:#fff;font-size:14px;padding:10px 24px;
+  border:1px solid rgba(255,255,255,.45);border-radius:var(--radius-btn);
+  transition:background .2s;
+}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hero-visual{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
+}
+.hero-stat-card{
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
+  border-radius:var(--radius-card);padding:16px 14px;backdrop-filter:blur(4px);
+}
+.hero-stat-card .num{font-size:24px;font-weight:800;color:var(--primary-light);line-height:1.2}
+.hero-stat-card .label{font-size:12px;color:rgba(255,255,255,.7);margin-top:4px}
+.hero-stat-card.wide{grid-column:span 2;display:flex;align-items:center;gap:12px}
+.hero-stat-card.wide .num{font-size:18px}
+
+/* ===== 主体布局（三栏门户） ===== */
+.layout{
+  max-width:var(--max-w);margin:0 auto;padding:32px 20px 60px;
+  display:grid;grid-template-columns:176px minmax(0,1fr) 248px;gap:28px;
+  align-items:start;
+}
+/* 左频道索引 */
+.channel-nav{
+  position:sticky;top:calc(var(--header-h) + 20px);
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);
+  padding:14px 0;box-shadow:var(--shadow);
+}
+.channel-nav h2{
+  font-size:13px;color:var(--text-3);padding:0 16px 10px;font-weight:600;letter-spacing:1px;
+}
+.channel-nav a{
+  display:block;font-size:13.5px;color:var(--text-2);padding:8px 16px;
+  border-left:3px solid transparent;transition:.2s;
+}
+.channel-nav a:hover,.channel-nav a.current{
+  background:var(--bg);color:var(--primary-dark);border-left-color:var(--primary);font-weight:600;
+}
+/* 中间主内容 */
+.main-col{min-width:0;display:flex;flex-direction:column;gap:36px}
+/* 右辅助栏 */
+.aside-col{
+  position:sticky;top:calc(var(--header-h) + 20px);
+  display:flex;flex-direction:column;gap:20px;
+}
+.aside-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);
+  padding:16px;box-shadow:var(--shadow);
+}
+.aside-card h3{
+  font-size:14px;font-weight:700;color:var(--text);margin-bottom:12px;
+  padding-bottom:8px;border-bottom:1px solid var(--border);
+}
+.aside-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.aside-list li{font-size:13px;color:var(--text-2);display:flex;gap:8px;line-height:1.55}
+.aside-list .rank{
+  flex-shrink:0;width:18px;height:18px;border-radius:4px;background:var(--bg);
+  color:var(--text-3);font-size:11px;display:flex;align-items:center;justify-content:center;
+  font-weight:700;margin-top:2px;
+}
+.aside-list li:nth-child(-n+3) .rank{background:var(--primary);color:#fff}
+.aside-list .rank-name{font-weight:600;color:var(--text);display:block}
+.aside-list .rank-meta{font-size:11.5px;color:var(--text-3)}
+
+/* ===== 板块通用 ===== */
+.section-block{background:transparent}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px;gap:12px;flex-wrap:wrap}
+.section-head h2{
+  font-size:20px;font-weight:800;color:var(--text);position:relative;padding-left:12px;
+}
+.section-head h2::before{
+  content:"";position:absolute;left:0;top:4px;bottom:4px;width:4px;border-radius:2px;
+  background:var(--primary);
+}
+.section-head .more-link{font-size:13px;color:var(--primary);font-weight:600;white-space:nowrap}
+.section-head .more-link:hover{text-decoration:underline}
+.section-note{font-size:13px;color:var(--text-3);margin-bottom:14px}
+
+/* 概览 */
+.overview-text{
+  font-size:14.5px;color:var(--text-2);line-height:1.9;
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);
+  padding:22px 24px;box-shadow:var(--shadow);
+}
+.overview-text p+p{margin-top:12px}
+.overview-text b{color:var(--primary-dark)}
+
+/* 卡片网格 */
+.card-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;
+}
+.content-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);
+  overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;
+  display:flex;flex-direction:column;
+}
+.content-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.content-card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--border)}
+.card-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card-type{
+  font-size:11px;color:var(--primary-dark);background:var(--primary-light);
+  padding:1px 8px;border-radius:var(--radius-tag);align-self:flex-start;font-weight:600;
+}
+.card-title{font-size:14.5px;font-weight:700;line-height:1.45;color:var(--text)}
+.card-desc{font-size:12.5px;color:var(--text-2);line-height:1.6;flex:1}
+.card-tags{display:flex;flex-wrap:wrap;gap:5px}
+.card-tags span{font-size:11px;color:var(--text-3);background:var(--bg);padding:1px 7px;border-radius:var(--radius-tag)}
+.card-meta{display:flex;justify-content:space-between;font-size:11.5px;color:var(--text-3);margin-top:2px}
+.card-meta b{color:var(--primary)}
+
+/* 紧凑列表（动态） */
+.update-list{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow)}
+.update-item{
+  display:flex;gap:14px;padding:13px 18px;border-bottom:1px solid var(--border);
+  align-items:flex-start;transition:background .15s;
+}
+.update-item:last-child{border-bottom:none}
+.update-item:hover{background:var(--bg)}
+.update-date{font-size:12px;color:var(--text-3);flex-shrink:0;width:64px;padding-top:2px;font-variant-numeric:tabular-nums}
+.update-main{flex:1;min-width:0}
+.update-name{font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px}
+.update-name .tag{font-size:10.5px;color:var(--primary-dark);background:var(--primary-light);padding:0 6px;border-radius:4px;margin-left:6px;font-weight:600}
+.update-summary{font-size:12.5px;color:var(--text-2);line-height:1.55}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.cat-item{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);
+  padding:14px 14px;box-shadow:var(--shadow);transition:.2s;
+  display:flex;flex-direction:column;gap:4px;
+}
+.cat-item:hover{border-color:var(--primary-light);background:#fff5f8}
+.cat-item .cat-name{font-size:14px;font-weight:700;color:var(--text)}
+.cat-item .cat-count{font-size:12px;color:var(--text-3)}
+.cat-item .cat-sample{font-size:11.5px;color:var(--text-2);line-height:1.5}
+
+/* 深度解析 */
+.deep-dive{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);
+  padding:26px 28px;box-shadow:var(--shadow);
+}
+.deep-dive h3{font-size:16.5px;font-weight:800;color:var(--primary-dark);margin:22px 0 8px}
+.deep-dive h3:first-child{margin-top:0}
+.deep-dive p{font-size:14px;color:var(--text-2);line-height:1.85;margin-bottom:10px}
+.deep-dive ul{margin:6px 0 10px 20px;font-size:13.5px;color:var(--text-2);line-height:1.8}
+.deep-dive li{margin-bottom:4px}
+.deep-dive .quote-box{
+  border-left:3px solid var(--primary);background:var(--bg);
+  padding:12px 16px;font-size:13px;color:var(--text-2);margin:12px 0;border-radius:0 8px 8px 0;
+}
+.deep-dive .quote-box b{color:var(--primary-dark)}
+
+/* 指南 */
+.guide-steps{display:flex;flex-direction:column;gap:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow)}
+.guide-step{display:flex;gap:16px;padding:16px 20px;border-bottom:1px solid var(--border)}
+.guide-step:last-child{border-bottom:none}
+.step-num{
+  flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--primary);
+  color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;
+}
+.step-body{flex:1}
+.step-body h4{font-size:14.5px;font-weight:700;margin-bottom:3px;color:var(--text)}
+.step-body p{font-size:13px;color:var(--text-2);line-height:1.7}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:10px}
+.faq-item{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);
+  overflow:hidden;box-shadow:var(--shadow);
+}
+.faq-item summary{
+  padding:14px 18px;font-size:14px;font-weight:600;color:var(--text);cursor:pointer;
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:18px;color:var(--primary);font-weight:400;flex-shrink:0;transition:transform .2s}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-answer{padding:0 18px 16px;font-size:13px;color:var(--text-2);line-height:1.8}
+
+/* 评论 */
+.comment-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.comment-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);
+  padding:14px 16px;box-shadow:var(--shadow);
+}
+.comment-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;background:var(--primary-light);
+  color:var(--primary-dark);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;
+}
+.comment-name{font-size:12.5px;font-weight:600;color:var(--text)}
+.comment-date{font-size:11px;color:var(--text-3);margin-left:auto}
+.comment-text{font-size:12.5px;color:var(--text-2);line-height:1.65}
+
+/* 资讯 */
+.news-list{display:flex;flex-direction:column;gap:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow)}
+.news-item{padding:16px 20px;border-bottom:1px solid var(--border);transition:background .15s}
+.news-item:last-child{border-bottom:none}
+.news-item:hover{background:var(--bg)}
+.news-title{font-size:14.5px;font-weight:700;color:var(--text);margin-bottom:3px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.news-date{font-size:11.5px;color:var(--text-3);font-weight:400;flex-shrink:0;font-variant-numeric:tabular-nums}
+.news-summary{font-size:12.5px;color:var(--text-2);line-height:1.6}
+
+/* 推荐标签 */
+.tag-cloud{display:flex;flex-wrap:wrap;gap:10px}
+.tag-cloud a{
+  font-size:13px;padding:6px 15px;border-radius:var(--radius-tag);
+  background:var(--surface);border:1px solid var(--border);color:var(--text-2);
+  transition:.2s;box-shadow:var(--shadow);
+}
+.tag-cloud a:hover{background:var(--primary-light);border-color:var(--primary-light);color:var(--primary-dark);font-weight:600}
+
+/* 投稿互动 */
+.submit-panel{
+  background:linear-gradient(120deg,#fce4ec,#f8bbd0 70%);
+  border:1px solid var(--primary-light);border-radius:var(--radius-card);
+  padding:24px 26px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;
+}
+.submit-panel .submit-text{flex:1;min-width:200px}
+.submit-panel h3{font-size:16px;font-weight:800;color:var(--primary-dark);margin-bottom:4px}
+.submit-panel p{font-size:13px;color:var(--text-2)}
+.submit-panel .btn-primary{background:var(--primary);color:#fff}
+.submit-panel .btn-primary:hover{background:var(--primary-dark)}
+
+/* 页尾 */
+footer.site-footer{
+  background:#2d1b22;color:rgba(255,255,255,.7);margin-top:20px;
+}
+.footer-inner{max-width:var(--max-w);margin:0 auto;padding:40px 20px 28px}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:28px}
+.footer-brand .logo-text{color:#fff;font-size:17px;margin-bottom:10px;display:block}
+.footer-brand p{font-size:12.5px;line-height:1.75;max-width:280px}
+.footer-col h4{font-size:13px;color:#fff;margin-bottom:12px;font-weight:700}
+.footer-col a{display:block;font-size:12.5px;color:rgba(255,255,255,.6);margin-bottom:7px;transition:.2s}
+.footer-col a:hover{color:var(--primary-light)}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.12);padding-top:18px;
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-size:12px;color:rgba(255,255,255,.45);
+}
+
+/* 回顶 */
+#backTop{
+  position:fixed;right:20px;bottom:24px;z-index:80;
+  width:42px;height:42px;border-radius:50%;border:none;
+  background:var(--primary);color:#fff;font-size:18px;
+  box-shadow:0 4px 16px rgba(194,24,91,.4);
+  display:none;align-items:center;justify-content:center;
+  transition:background .2s,transform .2s;
+}
+#backTop:hover{background:var(--primary-dark);transform:translateY(-2px)}
+
+/* ===== 响应式 ===== */
+@media(max-width:1100px){
+  .layout{grid-template-columns:160px minmax(0,1fr);gap:22px}
+  .aside-col{display:none}
+  .hero-inner{grid-template-columns:1fr;gap:28px}
+  .hero-visual{max-width:420px}
+}
+@media(max-width:1024px){
+  .main-nav{display:none}
+  .hamburger{display:flex}
+  .header-inner{height:60px}
+  .main-nav.open{
+    display:flex;position:fixed;top:var(--header-h);left:0;right:0;
+    background:#fff;flex-direction:column;padding:12px 20px 20px;
+    box-shadow:var(--shadow-hover);z-index:95;gap:2px;margin-left:0;
+    border-bottom:1px solid var(--border);
+  }
+  .main-nav.open a{padding:10px 12px;font-size:15px}
+  .mobile-mask.show{display:block}
+  .header-search input{width:100px}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .comment-list{grid-template-columns:1fr}
+}
+@media(max-width:740px){
+  :root{--header-h:104px}
+  .notice-bar{font-size:11.5px;padding:6px 12px;gap:8px}
+  .notice-bar .notice-items{gap:16px}
+  .header-inner{padding:0 12px;gap:10px}
+  .logo-text{font-size:16px}
+  .header-search{display:none}
+  .layout{grid-template-columns:1fr;padding:22px 14px 44px;gap:26px}
+  .channel-nav{
+    position:static;display:flex;overflow-x:auto;padding:6px 4px;gap:2px;
+    border-radius:var(--radius-btn);scrollbar-width:thin;
+  }
+  .channel-nav h2{display:none}
+  .channel-nav a{
+    border-left:none;border-bottom:2px solid transparent;white-space:nowrap;
+    padding:6px 11px;font-size:13px;
+  }
+  .channel-nav a.current,.channel-nav a:hover{border-left:none;border-bottom-color:var(--primary);background:transparent}
+  .hero-inner{padding:38px 16px 34px}
+  .hero h1{font-size:30px}
+  .hero-visual{grid-template-columns:1fr 1fr}
+  .card-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+  .card-title{font-size:13.5px}
+  .deep-dive{padding:20px 18px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:22px}
+  .footer-brand{grid-column:span 2}
+  .cat-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .submit-panel{padding:20px}
+  .section-head h2{font-size:17.5px}
+  #backTop{right:14px;bottom:16px;width:38px;height:38px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 + 页头 -->
+<div class="sticky-wrap">
+  <div class="notice-bar" role="status" aria-label="站内公告">
+    <span class="notice-brand">巨乳XXX</span>
+    <div class="notice-items">
+      <span><b>11-08</b> 「暮色回响」第12话更新</span>
+      <span><b>11-07</b> 新增「复古胶片」分类47条</span>
+      <span><b>11-06</b> 本周投稿作品128件</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="巨乳XXX 首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#c2185b"/><circle cx="32" cy="27" r="13" fill="#f8bbd0"/><circle cx="32" cy="27" r="8" fill="#c2185b"/><path d="M14 52c4-10 12-14 18-14s14 4 18 14z" fill="#f8bbd0"/></svg>
+        <span class="logo-text">巨乳XXX</span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="主导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选推荐</a>
+        <a href="/#updates">更新动态</a>
+        <a href="/#categories">分类索引</a>
+        <a href="/#deepdive">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#submit">投稿交流</a>
+      </nav>
+      <div class="header-search">
+        <input type="search" id="searchInput" placeholder="搜索条目名称…" aria-label="搜索站内条目">
+        <button type="button" id="searchBtn">搜索</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="打开菜单" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+<div class="mobile-mask" id="mobileMask"></div>
+
+<!-- 首屏 -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-badge">插画 · 漫画 · 影像</span>
+      <h1>巨乳XXX</h1>
+      <p class="hero-desc">聚合插画、漫画、影像与同人志中强调胸部表现的作品条目。按「复古胶片」「厚涂写实」「赛璐璐」等画风归档，附更新进度、分卷信息与读者评价，方便按画风或角色类型快速翻找。</p>
+      <div class="hero-actions">
+        <a href="/#featured" class="btn-primary">浏览精选条目</a>
+        <a href="/#categories" class="btn-ghost">按分类查找</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-stat-card">
+        <div class="num">1,286</div>
+        <div class="label">收录作品条目</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="num">47</div>
+        <div class="label">本周新增条目</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="num">9</div>
+        <div class="label">画风分类</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="num">11-08</div>
+        <div class="label">最近更新日</div>
+      </div>
+      <div class="hero-stat-card wide">
+        <div class="num">「暮色回响」第12话</div>
+        <div class="label" style="margin-top:0">今日 08:40 更新</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 主体三栏布局 -->
+<div class="layout">
+
+  <!-- 左频道索引 -->
+  <aside class="channel-nav" aria-label="频道索引">
+    <h2>频道索引</h2>
+    <a href="/#overview" class="current">领域概览</a>
+    <a href="/#featured">精选推荐</a>
+    <a href="/#updates">更新动态</a>
+    <a href="/#categories">分类索引</a>
+    <a href="/#deepdive">深度解析</a>
+    <a href="/#guide">体验指南</a>
+    <a href="/#faq">常见问答</a>
+    <a href="/#comments">用户评论</a>
+    <a href="/#news">相关资讯</a>
+    <a href="/#ranking">人气榜</a>
+    <a href="/#submit">投稿交流</a>
+  </aside>
+
+  <!-- 中间主内容 -->
+  <main class="main-col">
+
+    <!-- 1. 领域概览 -->
+    <section class="section-block" id="overview">
+      <div class="section-head"><h2>领域概览：胸部表现向作品的类型构成</h2></div>
+      <div class="overview-text">
+        <p>强调胸部表现的作品不是单一门类。按载体分，至少能拆成四块：<b>插画单图与套图</b>、<b>漫画分镜连载</b>、<b>影像与动态3D</b>、<b>同人志与设定集</b>。插画侧看重构图与光影，漫画侧看重分镜节奏和角色关系，影像侧则看建模精度与动作流畅度，同人志更依赖企划主题和印刷质感。四类的评价体系并不通用，拿插画的完成度去衡量连载漫画，常会得出偏低的结论。</p>
+        <p>从画风看，站内目前讨论度靠前的有<b>复古胶片感</b>、<b>厚涂写实</b>、<b>赛璐璐平涂</b>、<b>水彩柔光</b>几类。复古胶片偏爱低饱和肤色与颗粒噪点，厚涂写实强调体积与皮肤纹理，赛璐璐平涂用清晰边缘线组织视觉，水彩柔光则靠大面积晕染弱化轮廓。每种画风对「胸部体积感」的处理方式不同——厚涂靠阴影层次，赛璐璐靠线条和色块交界，水彩靠留白与渐变。</p>
+        <p>近30天内值得留意的条目集中在三个方向：连载进入关键话的<b>「暮色回响」</b>、首次推出设定集的<b>「潮汐档案」</b>、以及从单图转向短篇连载的<b>「午后三时的窗帘」</b>。三条线分别对应进度层、纸媒层和体裁转换层，适合放在一起对照着看。</p>
+      </div>
+    </section>
+
+    <!-- 2. 精选内容推荐 -->
+    <section class="section-block" id="featured">
+      <div class="section-head">
+        <h2>精选内容推荐</h2>
+        <a href="/#categories" class="more-link">按分类筛选 →</a>
+      </div>
+      <div class="card-grid">
+        <article class="content-card">
+          <img src="https://picsum.photos/seed/musei01/400/300" width="400" height="300" loading="lazy" alt="暮色回响 第12话 复古胶片风格插画封面">
+          <div class="card-body">
+            <span class="card-type">漫画连载</span>
+            <h3 class="card-title">暮色回响 · 第12话</h3>
+            <p class="card-desc">复古胶片画风，第12话用三页跨页处理浴室场景，阴影层次比前作明显加厚。分镜从角色侧脸切到水面倒影，信息量集中在中段。</p>
+            <div class="card-tags"><span>复古胶片</span><span>连载中</span><span>分镜</span></div>
+            <div class="card-meta"><span>热度 <b>9,420</b></span><span>11-08 更新</span></div>
+          </div>
+        </article>
+        <article class="content-card">
+          <img src="https://picsum.photos/seed/chaoxi02/400/300" width="400" height="300" loading="lazy" alt="潮汐档案 设定集 厚涂写实女性角色内页">
+          <div class="card-body">
+            <span class="card-type">设定集</span>
+            <h3 class="card-title">潮汐档案 · 初回设定集</h3>
+            <p class="card-desc">收录角色三视图、服装拆分与12张厚涂写实插画。附画师对皮肤高光处理的手写注释，纸张选用了157g哑粉纸。</p>
+            <div class="card-tags"><span>厚涂写实</span><span>纸媒</span><span>角色设定</span></div>
+            <div class="card-meta"><span>评分 <b>8.7</b></span><span>11-05 上架</span></div>
+          </div>
+        </article>
+        <article class="content-card">
+          <img src="https://picsum.photos/seed/wuhou03/400/300" width="400" height="300" loading="lazy" alt="午后三时的窗帘 赛璐璐平涂漫画内页">
+          <div class="card-body">
+            <span class="card-type">短篇连载</span>
+            <h3 class="card-title">午后三时的窗帘</h3>
+            <p class="card-desc">从单图作者转型连载的第一部作品。赛璐璐平涂配清晰边缘线，第3话开始尝试双线叙事，节奏比单图时期更稳。</p>
+            <div class="card-tags"><span>赛璐璐</span><span>转型作</span><span>日常向</span></div>
+            <div class="card-meta"><span>热度 <b>6,180</b></span><span>11-03 更新</span></div>
+          </div>
+        </article>
+        <article class="content-card">
+          <img src="https://picsum.photos/seed/beian04/400/300" width="400" height="300" loading="lazy" alt="北岸手记 水彩柔光风格插画套图">
+          <div class="card-body">
+            <span class="card-type">插画套图</span>
+            <h3 class="card-title">北岸手记 · 冬季六图</h3>
+            <p class="card-desc">水彩柔光处理的冬季主题套图，六张共用同一套低饱和色。作者在说明里写了调色思路，第4张的留白比例是重点。</p>
+            <div class="card-tags"><span>水彩柔光</span><span>套图</span><span>低饱和</span></div>
+            <div class="card-meta"><span>收藏 <b>2,340</b></span><span>11-02 发布</span></div>
+          </div>
+        </article>
+        <article class="content-card">
+          <img src="https://picsum.photos/seed/3dshi05/400/300" width="400" height="300" loading="lazy" alt="微光工作室 3D动态影像 角色建模展示">
+          <div class="card-body">
+            <span class="card-type">影像3D</span>
+            <h3 class="card-title">微光工作室 · 动态短篇</h3>
+            <p class="card-desc">3D建模动态短片，01分42秒。重点在布料飘动与皮肤次表面散射的调校，动作部分仍有轻微僵硬，但静态渲染质量高。</p>
+            <div class="card-tags"><span>3D</span><span>动态</span><span>建模</span></div>
+            <div class="card-meta"><span>热度 <b>5,760</b></span><span>10-30 发布</span></div>
+          </div>
+        </article>
+        <article class="content-card">
+          <img src="https://picsum.photos/seed/tongren06/400/300" width="400" height="300" loading="lazy" alt="夜行电车 同人志 线稿与网点纸处理">
+          <div class="card-body">
+            <span class="card-type">同人志</span>
+            <h3 class="card-title">夜行电车 · 线稿集</h3>
+            <p class="card-desc">A5判64页，收录28张线稿与4张网点纸样稿。线宽变化控制得干净，褶皱处理是主要看点，适合作为线稿参考。</p>
+            <div class="card-tags"><span>线稿</span><span>同人志</span><span>网点</span></div>
+            <div class="card-meta"><span>评分 <b>8.2</b></span><span>10-28 上架</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. 最新更新 -->
+    <section class="section-block" id="updates">
+      <div class="section-head"><h2>最新更新动态</h2></div>
+      <div class="update-list">
+        <div class="update-item"><span class="update-date">11-08</span><div class="update-main"><div class="update-name">暮色回响 · 第12话<span class="tag">漫画</span></div><div class="update-summary">浴室跨页场景上线，阴影层从2层加到4层，单话页数28页。</div></div></div>
+        <div class="update-item"><span class="update-date">11-08</span><div class="update-main"><div class="update-name">潮汐档案 · 追加特典<span class="tag">设定集</span></div><div class="update-summary">初回特典新增A3海报一张，已下单用户可通过订单页补填地址。</div></div></div>
+        <div class="update-item"><span class="update-date">11-07</span><div class="update-main"><div class="update-name">复古胶片分类 · 批量入库<span class="tag">分类</span></div><div class="update-summary">新增47条条目，多数为2023—2025年间发布的单图与套图。</div></div></div>
+        <div class="update-item"><span class="update-date">11-07</span><div class="update-main"><div class="update-name">午后三时的窗帘 · 第4话<span class="tag">连载</span></div><div class="update-summary">双线叙事继续，本话以配角视角收尾，页数从24页加到30页。</div></div></div>
+        <div class="update-item"><span class="update-date">11-06</span><div class="update-main"><div class="update-name">北岸手记 · 冬季六图补遗<span class="tag">插画</span></div><div class="update-summary">追加两张未公开草图，附作者对留白比例的语音说明4分12秒。</div></div></div>
+        <div class="update-item"><span class="update-date">11-05</span><div class="update-main"><div class="update-name">微光工作室 · 幕后花絮<span class="tag">影像</span></div><div class="update-summary">发布渲染过程拆解，重点讲次表面散射参数从0.3调到0.7的效果差异。</div></div></div>
+        <div class="update-item"><span class="update-date">11-04</span><div class="update-main"><div class="update-name">夜行电车 · 再版通知<span class="tag">同人志</span></div><div class="update-summary">初版售罄后启动再版，印刷厂排期12月中旬，页数维持64页不变。</div></div></div>
+        <div class="update-item"><span class="update-date">11-03</span><div class="update-main"><div class="update-name">赛璐璐平涂分类 · 条目校准<span class="tag">分类</span></div><div class="update-summary">将32条边缘线模糊的条目移出赛璐璐分类，归入厚涂写实。</div></div></div>
+        <div class="update-item"><span class="update-date">11-02</span><div class="update-main"><div class="update-name">「橙线」系列 · 第7张<span class="tag">插画</span></div><div class="update-summary">系列更新至第7张，本张改用逆光构图，作者说明里提到调色步骤。</div></div></div>
+        <div class="update-item"><span class="update-date">10-30</span><div class="update-main"><div class="update-name">微光工作室 · 动态短篇上线<span class="tag">影像</span></div><div class="update-summary">01分42秒短片公开，渲染分辨率1080p，帧率24fps。</div></div></div>
+      </div>
+    </section>
+
+    <!-- 4. 分类入口 -->
+    <section class="section-block" id="categories">
+      <div class="section-head"><h2>分类检索入口</h2></div>
+      <p class="section-note">按画风、载体与用途划分，点击进入对应条目列表。</p>
+      <div class="cat-grid">
+        <a href="/#featured" class="cat-item"><span class="cat-name">复古胶片</span><span class="cat-count">186 条</span><span class="cat-sample">低饱和、颗粒噪点</span></a>
+        <a href="/#featured" class="cat-item"><span class="cat-name">厚涂写实</span><span class="cat-count">254 条</span><span class="cat-sample">体积感、皮肤纹理</span></a>
+        <a href="/#featured" class="cat-item"><span class="cat-name">赛璐璐平涂</span><span class="cat-count">142 条</span><span class="cat-sample">清晰边缘线、色块</span></a>
+        <a href="/#featured" class="cat-item"><span class="cat-name">水彩柔光</span><span class="cat-count">98 条</span><span class="cat-sample">晕染、留白、渐变</span></a>
+        <a href="/#featured" class="cat-item"><span class="cat-name">漫画连载</span><span class="cat-count">203 条</span><span class="cat-sample">分镜、角色关系</span></a>
+        <a href="/#featured" class="cat-item"><span class="cat-name">插画套图</span><span class="cat-count">311 条</span><span class="cat-sample">系列、统一色</span></a>
+        <a href="/#featured" class="cat-item"><span class="cat-name">影像3D</span><span class="cat-count">76 条</span><span class="cat-sample">建模、动作渲染</span></a>
+        <a href="/#featured" class="cat-item"><span class="cat-name">同人志</span><span class="cat-count">116 条</span><span class="cat-sample">线稿、网点、印刷</span></a>
+      </div>
+    </section>
+
+    <!-- 5. 深度解析 -->
+    <section class="section-block" id="deepdive">
+      <div class="section-head"><h2>深度解析：体积感的三种处理路径</h2></div>
+      <div class="deep-dive">
+        <h3>一、阴影层数与皮肤体积的对应关系</h3>
+        <p>厚涂写实组里，一个可量化的指标是阴影层数。以「潮汐档案」初回设定集为例，画师在注释里写明：皮肤基础色上叠2层暗部、1层高光、1层环境光反射，共4层。对比同分类下2024年发布的「静水」系列，多数单图只有2层暗部加1层高光，共3层。层数增加带来的差异在乳沟和锁骨区域最明显——4层方案能画出从亮部到暗部的连续过渡，3层方案在交界处容易出现色带。</p>
+        <p>这个差异不是绝对优劣。3层方案的色带在某些复古胶片条目里被主动保留，作为颗粒感的组成部分。判断时先看作者是否在说明里交代了层数，没交代的条目只能从成图倒推，倒推误差通常在一层左右。</p>
+        <h3>二、赛璐璐平涂的线条权重</h3>
+        <p>赛璐璐平涂靠线条组织体积，线宽变化是核心。站内142条赛璐璐条目中，约六成使用外粗内细的线宽结构：轮廓线2.5px到3px，内部结构线1px到1.2px。剩下四成使用等宽线，视觉上更扁平，但和低饱和色块搭配时反而成立。</p>
+        <ul>
+          <li>外粗内细：适合强调角色轮廓，胸部外缘线与手臂线形成明确分区。</li>
+          <li>等宽线：适合日常向场景，弱化体积，靠色块交界提示结构。</li>
+          <li>无线稿：极少见，仅3条，多依赖色块硬边。</li>
+        </ul>
+        <p>「午后三时的窗帘」属于外粗内细结构，第3话开始把内部结构线从1px降到0.8px，角色视觉重量随之减轻。这个调整和剧情从日常转向双线叙事同步发生，可以理解为画风为叙事让路。</p>
+        <h3>三、复古胶片的颗粒分布</h3>
+        <p>复古胶片感条目共186条，颗粒噪点的分布位置差异很大。约七成把颗粒压在暗部，亮部保持相对干净；约两成全图均匀分布；剩余一成只在边缘区域加颗粒。均匀分布的条目在缩略图尺寸下颗粒感会被稀释，需要放大到原图才看得出来。</p>
+        <div class="quote-box"><b>可核对的对比：</b>「暮色回响」第8话和第12话都用了复古胶片处理，第8话颗粒集中在暗部，第12话改为全图均匀。作者在第12话后记里写了原因：浴室场景大面积水面反光，暗部颗粒在反光区会显得脏，均匀分布反而更稳。</div>
+        <h3>四、三种路径的适用场景</h3>
+        <p>厚涂写实适合单图与设定集，信息密度高，放大后经得起看。赛璐璐平涂适合连载，线条在缩小后仍然清晰，读者在手机屏上翻页不缺识别度。复古胶片适合套图和短篇，颗粒感需要一定篇幅才能形成统一氛围，单张容易显得刻意。</p>
+        <p>把三种路径混用在同一个连载里，近年有增多趋势，但多数失败案例的共同点是：层数、线宽、颗粒三个参数只调了其中一个，另外两个保持原样，视觉上出现断层。可核对的例子是「北岸手记」第3张，作者把颗粒从均匀改为暗部集中，同时没有调整线宽，导致角色轮廓和背景颗粒互相打架，第4张才补上调校。</p>
+      </div>
+    </section>
+
+    <!-- 6. 体验指南 -->
+    <section class="section-block" id="guide">
+      <div class="section-head"><h2>体验指南：按什么顺序看、怎么判断值不值得投入时间</h2></div>
+      <div class="guide-steps">
+        <div class="guide-step">
+          <div class="step-num">1</div>
+          <div class="step-body"><h4>先定载体，再看画风</h4><p>漫画连载和插画套图的评价标准不同。连载先看更新是否稳定、单话页数是否够，再谈画风；插画套图先看套图张数是否成系列，单张完成度反而是次要的。</p></div>
+        </div>
+        <div class="guide-step">
+          <div class="step-num">2</div>
+          <div class="step-body"><h4>用更新日期筛掉半途而废的连载</h4><p>更新间隔超过45天的连载，先假定它可能停更。站内标记「连载中」的条目里，有17条上次更新在2026年9月之前，翻的时候留意日期。</p></div>
+        </div>
+        <div class="guide-step">
+          <div class="step-num">3</div>
+          <div class="step-body"><h4>厚涂看层数说明，赛璐璐看线宽</h4><p>作者在说明里主动交代层数或线宽参数的条目，完成度通常更可控。没交代的，放大到原图看暗部过渡和线条粗细，两分钟能判断个大概。</p></div>
+        </div>
+        <div class="guide-step">
+          <div class="step-num">4</div>
+          <div class="step-body"><h4>同人志先确认页数和判型</h4><p>A5判64页和B5判32页的阅读体验差别很大。线稿集看线宽变化，彩图集看印刷色差，再版条目要确认是否改过纸。</p></div>
+        </div>
+        <div class="guide-step">
+          <div class="step-num">5</div>
+          <div class="step-body"><h4>影像类先看静态渲染，再看动态</h4><p>3D动态短片里，静态帧质量高的占多数，动作流畅度普遍是短板。先看封面和关键帧，能接受再花时间看完整片。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="section-block" id="faq">
+      <div class="section-head"><h2>常见问答</h2></div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>复古胶片画风的颗粒噪点一般加在哪些位置？</summary>
+          <div class="faq-answer">站内186条复古胶片条目里，约七成把颗粒压在暗部，亮部相对干净；约两成全图均匀分布。暗部集中的方案在皮肤亮面保留通透感，均匀分布更适合大面积水面或夜景场景。「暮色回响」第12话从暗部集中改为均匀分布，原因写在作者后记里。</div>
+        </details>
+        <details class="faq-item">
+          <summary>厚涂写实的阴影层数怎么判断够不够？</summary>
+          <div class="faq-answer">看乳沟和锁骨区域的过渡是否连续。4层方案（2层暗部+1层高光+1层环境光反射）能画出连续过渡，3层方案在交界处容易出现色带。「潮汐档案」初回设定集的手写注释给出了具体层数，可作为参照。</div>
+        </details>
+        <details class="faq-item">
+          <summary>赛璐璐平涂的外粗内细线宽具体是多少？</summary>
+          <div class="faq-answer">轮廓线约2.5px到3px，内部结构线约1px到1.2px。站内142条赛璐璐条目里约六成使用这个结构。线宽降到0.8px时角色视觉重量会变轻，「午后三时的窗帘」第3话做过这个调整。</div>
+        </details>
+        <details class="faq-item">
+          <summary>连载漫画停更多久算危险信号？</summary>
+          <div class="faq-answer">更新间隔超过45天就该留意。标记为「连载中」的条目里，有17条上次更新在2026年9月之前，翻的时候可以按日期排序先筛掉这批。</div>
+        </details>
+        <details class="faq-item">
+          <summary>同人志线稿集的线宽变化怎么看？</summary>
+          <div class="faq-answer">翻到有褶皱的区域，看外轮廓线和内部衣褶线是否分得开。分得开说明作者有意识控制线宽层级；全部一样粗，多数是复制线稿没做二次处理。「夜行电车」线稿集在这点上处理得干净，28张线稿里约20张有明显线宽变化。</div>
+        </details>
+        <details class="faq-item">
+          <summary>3D动态短片的动作流畅度普遍是什么水平？</summary>
+          <div class="faq-answer">站内76条影像3D条目里，静态帧质量高的占多数，动作部分出现轻微僵硬的比例不低。判断时先看关键帧和封面，再决定是否看完整片。帧率24fps和30fps的条目都有，后者动作连贯性通常更好。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8. 用户评论 -->
+    <section class="section-block" id="comments">
+      <div class="section-head"><h2>用户评论</h2></div>
+      <div class="comment-list">
+        <div class="comment-card"><div class="comment-head"><span class="avatar">墨</span><span class="comment-name">墨鱼卷</span><span class="comment-date">11-08</span></div><p class="comment-text">暮色回响第12话那三页跨页真的顶，水面反光处理得干净，就是页数28页有点少，翻两下就没了。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">阿</span><span class="comment-name">阿澄</span><span class="comment-date">11-08</span></div><p class="comment-text">潮汐档案设定集的纸选得好，157g哑粉翻起来不反光。手写注释能看清，这点比很多设定集强。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">北</span><span class="comment-name">北岸旧事</span><span class="comment-date">11-07</span></div><p class="comment-text">午后三时的窗帘从单图转连载，第4话节奏比前面稳了，但双线切得有点碎，看着累。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">k</span><span class="comment-name">kumo_9</span><span class="comment-date">11-07</span></div><p class="comment-text">复古胶片分类一下加了47条，翻了一晚上，有几条颗粒压得太重，缩略图看着像糊了。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">橙</span><span class="comment-name">橙线</span><span class="comment-date">11-06</span></div><p class="comment-text">微光工作室那个动态短篇，静态帧能打9分，动作3分不能再多，走路那段膝盖像卡了。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">夜</span><span class="comment-name">夜行乘客</span><span class="comment-date">11-06</span></div><p class="comment-text">夜行电车线稿集再版了，初版没抢到。64页线稿，褶皱处理确实值得临摹几遍。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">水</span><span class="comment-name">水彩罐子</span><span class="comment-date">11-05</span></div><p class="comment-text">北岸手记第4张留白比例是舒服，但第3张颗粒和线宽打架的问题作者自己好像也没发现。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">赛</span><span class="comment-name">赛璐璐信徒</span><span class="comment-date">11-05</span></div><p class="comment-text">等宽线那派其实挺好，日常场景硬要外粗内细反而违和。个人偏好。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">静</span><span class="comment-name">静水无痕</span><span class="comment-date">11-04</span></div><p class="comment-text">厚涂4层和3层的差别真没想象中大，很多3层条目调色调得好，看着一样舒服。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">M</span><span class="comment-name">Miya</span><span class="comment-date">11-04</span></div><p class="comment-text">今天翻到一条2023年的老套图，颗粒均匀分布，放大看还是能看，缩略图就一般。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">土</span><span class="comment-name">土豆泥</span><span class="comment-date">11-03</span></div><p class="comment-text">首页那个搜索框能搜条目名，试了下「潮汐」直接跳出来了，够用。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">半</span><span class="comment-name">半糖去冰</span><span class="comment-date">11-03</span></div><p class="comment-text">赛璐璐分类校准后移出去32条，之前就觉得有几条边缘糊成那样不该算赛璐璐。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">南</span><span class="comment-name">南风知我</span><span class="comment-date">11-02</span></div><p class="comment-text">微光工作室花絮里那个次表面散射参数从0.3调到0.7，截图对比确实明显，学到了。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">周</span><span class="comment-name">周末画不动</span><span class="comment-date">11-01</span></div><p class="comment-text">45天没更新就算危险信号有点严吧，有些作者就是慢工出细活。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">小</span><span class="comment-name">小满</span><span class="comment-date">10-31</span></div><p class="comment-text">橙线系列第7张逆光构图，胸口的亮部压得很低，整体偏暗，喜欢不来。</p></div>
+        <div class="comment-card"><div class="comment-head"><span class="avatar">阿</span><span class="comment-name">阿七</span><span class="comment-date">10-30</span></div><p class="comment-text">同人志再版要等到12月中旬，有点久，先收藏了。</p></div>
+      </div>
+    </section>
+
+    <!-- 9. 相关资讯 -->
+    <section class="section-block" id="news">
+      <div class="section-head"><h2>相关资讯</h2></div>
+      <div class="news-list">
+        <article class="news-item">
+          <div class="news-title"><span class="news-date">2026-11-08</span>「暮色回响」第12话更新，单话页数升至28页</div>
+          <p class="news-summary">本话为浴室场景，作者在后记中说明将阴影层从2层加至4层，单行本第3卷预计2027年1月发行。</p>
+        </article>
+        <article class="news-item">
+          <div class="news-title"><span class="news-date">2026-11-06</span>潮汐档案设定集初回售罄，特典海报改为补填制</div>
+          <p class="news-summary">初回印刷量3,000册，上架两天售罄。官方公告称已下单用户可在11月15日前于订单页补填海报邮寄地址。</p>
+        </article>
+        <article class="news-item">
+          <div class="news-title"><span class="news-date">2026-11-05</span>微光工作室发布渲染拆解，次表面散射参数0.3调至0.7</div>
+          <p class="news-summary">幕后花絮视频4分12秒，对比了皮肤高光在不同参数下的差异，工作室表示下一部短片将尝试30fps。</p>
+        </article>
+        <article class="news-item">
+          <div class="news-title"><span class="news-date">2026-11-04</span>夜行电车线稿集启动再版，印刷排期12月中旬</div>
+          <p class="news-summary">初版64页配置不变，A5判，再版未加页。作者在说明中确认不追加新线稿，仅更换封面用纸。</p>
+        </article>
+        <article class="news-item">
+          <div class="news-title"><span class="news-date">2026-11-03</span>赛璐璐平涂分类完成条目校准，32条移出</div>
+          <p class="news-summary">校准标准为边缘线是否清晰可辨，移出的条目归入厚涂写实。分类维护方称此后每季度校准一次。</p>
+        </article>
+        <article class="news-item">
+          <div class="news-title"><span class="news-date">2026-10-30</span>微光工作室动态短篇上线，时长1分42秒</div>
+          <p class="news-summary">渲染分辨率1080p，帧率24fps。工作室在发布说明中提到动作部分仍有轻微僵硬，下一部将增加中间帧。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10. 相关推荐 -->
+    <section class="section-block" id="related">
+      <div class="section-head"><h2>相关推荐</h2></div>
+      <div class="tag-cloud">
+        <a href="/#featured">潮汐档案 手写注释</a>
+        <a href="/#featured">暮色回响 分镜拆解</a>
+        <a href="/#featured">午后三时的窗帘 双线叙事</a>
+        <a href="/#featured">北岸手记 留白比例</a>
+        <a href="/#featured">微光工作室 次表面散射</a>
+        <a href="/#featured">夜行电车 褶皱线稿</a>
+        <a href="/#featured">橙线 逆光构图</a>
+        <a href="/#featured">静水 三层阴影方案</a>
+      </div>
+    </section>
+
+    <!-- 11. 人气榜 -->
+    <section class="section-block" id="ranking">
+      <div class="section-head"><h2>本周人气榜</h2></div>
+      <div class="aside-card" style="box-shadow:var(--shadow)">
+        <ul class="aside-list">
+          <li><span class="rank">1</span><span><span class="rank-name">暮色回响 · 第12话</span><span class="rank-meta">漫画连载 · 热度 9,420</span></span></li>
+          <li><span class="rank">2</span><span><span class="rank-name">潮汐档案 · 初回设定集</span><span class="rank-meta">设定集 · 评分 8.7</span></span></li>
+          <li><span class="rank">3</span><span><span class="rank-name">午后三时的窗帘 · 第4话</span><span class="rank-meta">短篇连载 · 热度 6,180</span></span></li>
+          <li><span class="rank">4</span><span><span class="rank-name">微光工作室 · 动态短篇</span><span class="rank-meta">影像3D · 热度 5,760</span></span></li>
+          <li><span class="rank">5</span><span><span class="rank-name">北岸手记 · 冬季六图</span><span class="rank-meta">插画套图 · 收藏 2,340</span></span></li>
+          <li><span class="rank">6</span><span><span class="rank-name">夜行电车 · 线稿集</span><span class="rank-meta">同人志 · 评分 8.2</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 投稿互动 -->
+    <section class="section-block" id="submit">
+      <div class="submit-panel">
+        <div class="submit-text">
+          <h3>投稿与交流</h3>
+          <p>发现新的复古胶片套图或厚涂设定集？可以提交条目名称、作者与来源说明，审核后进入分类索引。本周已收到128件投稿。</p>
+        </div>
+        <a href="/#submit" class="btn-primary">提交条目</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右辅助栏 -->
+  <aside class="aside-col" aria-label="辅助信息">
+    <div class="aside-card">
+      <h3>本周热度榜</h3>
+      <ul class="aside-list">
+        <li><span class="rank">1</span><span><span class="rank-name">暮色回响 · 第12话</span><span class="rank-meta">漫画 · 9,420</span></span></li>
+        <li><span class="rank">2</span><span><span class="rank-name">潮汐档案 · 设定集</span><span class="rank-meta">设定集 · 8.7分</span></span></li>
+        <li><span class="rank">3</span><span><span class="rank-name">午后三时的窗帘</span><span class="rank-meta">连载 · 6,180</span></span></li>
+        <li><span class="rank">4</span><span><span class="rank-name">微光工作室 · 短片</span><span class="rank-meta">影像3D · 5,760</span></span></li>
+        <li><span class="rank">5</span><span><span class="rank-name">北岸手记 · 六图</span><span class="rank-meta">插画 · 2,340</span></span></li>
+      </ul>
+    </div>
+    <div class="aside-card">
+      <h3>画风分类速查</h3>
+      <ul class="aside-list">
+        <li><span class="rank-name">复古胶片</span><span class="rank-meta">186 条</span></li>
+        <li><span class="rank-name">厚涂写实</span><span class="rank-meta">254 条</span></li>
+        <li><span class="rank-name">赛璐璐平涂</span><span class="rank-meta">142 条</span></li>
+        <li><span class="rank-name">水彩柔光</span><span class="rank-meta">98 条</span></li>
+        <li><span class="rank-name">线稿与网点</span><span class="rank-meta">116 条</span></li>
+      </ul>
+    </div>
+    <div class="aside-card">
+      <h3>更新提示</h3>
+      <ul class="aside-list">
+        <li><span class="rank-name">11-08</span><span class="rank-meta">暮色回响 第12话</span></li>
+        <li><span class="rank-name">11-07</span><span class="rank-meta">复古胶片分类 +47</span></li>
+        <li><span class="rank-name">11-05</span><span class="rank-meta">潮汐档案 特典补填</span></li>
+        <li><span class="rank-name">11-04</span><span class="rank-meta">夜行电车 再版排期</span></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-text">巨乳XXX</span>
+        <p>覆盖2023年至2026年11月的插画、漫画、同人志与3D影像条目，收录以画风分类为主、载体分类为辅。每周更新两次，更新日集中在周三与周六。</p>
+      </div>
+      <div class="footer-col">
+        <h4>画风分类</h4>
+        <a href="/#categories">复古胶片</a>
+        <a href="/#categories">厚涂写实</a>
+        <a href="/#categories">赛璐璐平涂</a>
+        <a href="/#categories">水彩柔光</a>
+      </div>
+      <div class="footer-col">
+        <h4>内容形态</h4>
+        <a href="/#categories">漫画连载</a>
+        <a href="/#categories">插画套图</a>
+        <a href="/#categories">影像3D</a>
+        <a href="/#categories">同人志</a>
+      </div>
+      <div class="footer-col">
+        <h4>参与</h4>
+        <a href="/#submit">提交条目</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#news">相关资讯</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 巨乳XXX · 内容条目为示例数据，用于分类检索与阅读参考</span>
+      <span>最近更新：2026-11-08 · 对应条目：暮色回响 第12话</span>
+    </div>
+  </div>
+</footer>
+
+<button id="backTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var hamburger=document.getElementById('hamburger');
+  var mainNav=document.getElementById('mainNav');
+  var mask=document.getElementById('mobileMask');
+  var backTop=document.getElementById('backTop');
+
+  function openMenu(){
+    mainNav.classList.add('open');
+    mask.classList.add('show');
+    hamburger.setAttribute('aria-expanded','true');
+  }
+  function closeMenu(){
+    mainNav.classList.remove('open');
+    mask.classList.remove('show');
+    hamburger.setAttribute('aria-expanded','false');
+  }
+  hamburger.addEventListener('click',function(){
+    if(mainNav.classList.contains('open')){closeMenu();}else{openMenu();}
+  });
+  mask.addEventListener('click',closeMenu);
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){closeMenu();}
+  });
+  mainNav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'&&window.innerWidth<=1024){closeMenu();}
+  });
+
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>window.innerHeight){backTop.style.display='flex';}
+    else{backTop.style.display='none';}
+  });
+  backTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  // 搜索：查找可见条目名称与描述
+  var searchInput=document.getElementById('searchInput');
+  var searchBtn=document.getElementById('searchBtn');
+  function doSearch(){
+    var q=searchInput.value.trim().toLowerCase();
+    if(!q){
+      document.querySelectorAll('.content-card,.update-item,.news-item,.faq-item').forEach(function(el){
+        el.style.display='';
+      });
+      return;
+    }
+    var cards=document.querySelectorAll('.content-card');
+    cards.forEach(function(card){
+      var txt=card.textContent.toLowerCase();
+      card.style.display=txt.indexOf(q)>-1?'':'none';
+    });
+    var updates=document.querySelectorAll('.update-item');
+    updates.forEach(function(item){
+      var txt=item.textContent.toLowerCase();
+      item.style.display=txt.indexOf(q)>-1?'':'none';
+    });
+    var news=document.querySelectorAll('.news-item');
+    news.forEach(function(item){
+      var txt=item.textContent.toLowerCase();
+      item.style.display=txt.indexOf(q)>-1?'':'none';
+    });
+    var faqs=document.querySelectorAll('.faq-item');
+    faqs.forEach(function(item){
+      var txt=item.textContent.toLowerCase();
+      item.style.display=txt.indexOf(q)>-1?'':'none';
+    });
+  }
+  searchBtn.addEventListener('click',doSearch);
+  searchInput.addEventListener('keydown',function(e){if(e.key==='Enter'){doSearch();}});
+
+  // 侧栏导航滚动高亮
+  var chLinks=document.querySelectorAll('.channel-nav a');
+  var sections=[];
+  chLinks.forEach(function(a){
+    var id=a.getAttribute('href').split('#')[1];
+    var el=document.getElementById(id);
+    if(el){sections.push({id:id,el:el,link:a});}
+  });
+  window.addEventListener('scroll',function(){
+    var scrollPos=window.scrollY+130;
+    var current=null;
+    sections.forEach(function(s){
+      if(s.el.offsetTop<=scrollPos){current=s;}
+    });
+    chLinks.forEach(function(a){a.classList.remove('current');});
+    if(current){current.link.classList.add('current');}
+  },{passive:true});
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"巨乳XXX",
+  "description":"聚合插画、漫画、影像与同人志中强调胸部表现的作品条目，按画风分类并提供更新动态与用户评论。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"复古胶片画风的颗粒噪点一般加在哪些位置？","acceptedAnswer":{"@type":"Answer","text":"站内186条复古胶片条目里，约七成把颗粒压在暗部，亮部相对干净；约两成全图均匀分布。暗部集中的方案在皮肤亮面保留通透感，均匀分布更适合大面积水面或夜景场景。「暮色回响」第12话从暗部集中改为均匀分布，原因写在作者后记里。"}},
+    {"@type":"Question","name":"厚涂写实的阴影层数怎么判断够不够？","acceptedAnswer":{"@type":"Answer","text":"看乳沟和锁骨区域的过渡是否连续。4层方案（2层暗部+1层高光+1层环境光反射）能画出连续过渡，3层方案在交界处容易出现色带。「潮汐档案」初回设定集的手写注释给出了具体层数，可作为参照。"}},
+    {"@type":"Question","name":"赛璐璐平涂的外粗内细线宽具体是多少？","acceptedAnswer":{"@type":"Answer","text":"轮廓线约2.5px到3px，内部结构线约1px到1.2px。站内142条赛璐璐条目里约六成使用这个结构。线宽降到0.8px时角色视觉重量会变轻，「午后三时的窗帘」第3话做过这个调整。"}},
+    {"@type":"Question","name":"连载漫画停更多久算危险信号？","acceptedAnswer":{"@type":"Answer","text":"更新间隔超过45天就该留意。标记为「连载中」的条目里，有17条上次更新在2026年9月之前，翻的时候可以按日期排序先筛掉这批。"}},
+    {"@type":"Question","name":"同人志线稿集的线宽变化怎么看？","acceptedAnswer":{"@type":"Answer","text":"翻到有褶皱的区域，看外轮廓线和内部衣褶线是否分得开。分得开说明作者有意识控制线宽层级；全部一样粗，多数是复制线稿没做二次处理。「夜行电车」线稿集在这点上处理得干净，28张线稿里约20张有明显线宽变化。"}},
+    {"@type":"Question","name":"3D动态短片的动作流畅度普遍是什么水平？","acceptedAnswer":{"@type":"Answer","text":"站内76条影像3D条目里，静态帧质量高的占多数，动作部分出现轻微僵硬的比例不低。判断时先看关键帧和封面，再决定是否看完整片。帧率24fps和30fps的条目都有，后者动作连贯性通常更好。"}}
+  ]
+}
+</script>
+</body>
+          </html>
